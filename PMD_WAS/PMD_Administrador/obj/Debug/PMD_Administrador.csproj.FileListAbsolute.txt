@@ -1,0 +1,10 @@
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\bin\Debug\PMD_Administrador.exe.config
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\bin\Debug\PMD_Administrador.exe
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\bin\Debug\PMD_Administrador.pdb
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.csprojAssemblyReference.cache
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.Form1.resources
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.Properties.Resources.resources
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.csproj.GenerateResource.cache
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.csproj.CoreCompileInputs.cache
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.exe
+C:\Intellipolis\PMD\PMD_WAS\PMD_Administrador\obj\Debug\PMD_Administrador.pdb

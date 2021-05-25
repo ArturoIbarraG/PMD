@@ -1,0 +1,299 @@
+﻿a.collapse-action h4 {
+    font-size: 15px;
+    text-transform: none;
+}
+
+a.collapse-action > h4 > * {
+    display: inline-block;
+}
+
+a.collapse-action.collapsed *.collapse {
+    display: inline-block;
+}
+
+a.collapse-action.collapsed *.normal {
+    display: none;
+}
+
+a.collapse-action:not(.collapsed) *.collapse {
+    display: none;
+}
+
+a.collapse-action:not(.collapsed) *.normal {
+    display: inline-block;
+}
+
+.campo_obligatorio.error {
+    border-color: #E57373;
+    background-color: #EF9A9A;
+    color: #B71C1C;
+}
+
+.btn-xs {
+    font-size: 12px;
+    padding: 2px;
+}
+
+#screen-updating {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    z-index: 9999;
+}
+
+    #screen-updating h5 {
+        color: #FFF;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: 0px auto;
+        top: 40%;
+        position: absolute;
+        left: 45%;
+        font-weight: 600;
+    }
+
+#notificationInbox .icon {
+    color: #FFF;
+    font-size: 18px;
+    top: 2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+#divAlertas {
+    right: 0px !important;
+    width: auto !important;
+}
+
+    #divAlertas .toggle-content {
+        position: absolute;
+        top: 41px;
+        background-color: #FFF;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        color: #444444;
+        width: 380px;
+        box-shadow: 0px 5px 9px 0px #888;
+        margin-left: -25px;
+        max-height: 400px;
+        overflow-y: auto;
+        right: -10px;
+        z-index: 100;
+    }
+
+        #divAlertas .toggle-content .header {
+            font-size: 16px;
+            padding: 10px;
+            line-height: 19px;
+            font-weight: 600;
+            background-color: #FFF;
+            color: #333;
+            border-bottom: 1px solid #DDD;
+            text-transform: uppercase;
+            height: auto;
+            text-align: center;
+        }
+
+        #divAlertas .toggle-content .empty {
+            padding: 6px;
+            font-weight: 100;
+            background-color: #f9f9fa;
+            color: #c0cadd;
+        }
+
+        #divAlertas .toggle-content div:not(.header):not(.empty):not(.mensaje) {
+            display: block;
+            position: relative;
+            padding: 10px 6px;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 16px;
+        }
+
+            #divAlertas .toggle-content div:not(.header):not(.empty):not(.mensaje):hover {
+                background-color: rgba(240, 240, 240, 0.58);
+                cursor: pointer;
+            }
+
+        #divAlertas .toggle-content img.icon {
+            float: left;
+            padding: 0px;
+            margin: 8px 12px 0 0;
+            width: 34px;
+            border: 1px solid #CCC;
+            border-radius: 40px;
+            height: 34px;
+        }
+
+        #divAlertas .toggle-content span.nombre {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+            font-size: 11px;
+            font-weight: 600;
+            color: #222222;
+            line-height: 12px;
+        }
+
+        #divAlertas .toggle-content span.mensaje {
+            display: block;
+            text-align: left;
+            padding: 0px;
+            margin: 0px;
+            font-size: 11px;
+            color: #777;
+            font-weight: 100;
+            line-height: 12px;
+            margin-top: 6px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 80%;
+        }
+
+        #divAlertas .toggle-content .fecha {
+            position: relative;
+            font-size: 12px;
+            text-align: right;
+            width: 100%;
+            display: block;
+            line-height: 10px;
+            right: 6px;
+        }
+
+        #divAlertas .toggle-content .empty i {
+            display: block;
+            font-size: 36px;
+        }
+
+        #divAlertas .toggle-content .empty span {
+            font-size: 12px;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        #divAlertas .toggle-content span.opcion {
+            font-size: 15px;
+            color: #3498db;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 11px;
+            display: inline;
+        }
+
+        #divAlertas .toggle-content div.mensaje {
+            font-size: 15px;
+            padding: 0px;
+            margin: 0px;
+            display: block;
+            position: relative;
+            width: 100%;
+            line-height: 18px;
+            color: #777;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #divAlertas .toggle-content a {
+            display: block;
+            padding: 6px;
+            text-decoration: none;
+            text-align: left;
+            font-weight: 100;
+            color: #555;
+            border-bottom: 1px solid #EEEEEE;
+            position: relative;
+        }
+
+            #divAlertas .toggle-content a:hover {
+                background-color: rgba(240, 240, 240, 0.58);
+                cursor: pointer;
+            }
+
+        #divAlertas .toggle-content b {
+            color: #3498db;
+        }
+
+    #divAlertas .toggle-input {
+        position: absolute;
+        clip: rect(0 0 0 0);
+    }
+
+    #divAlertas svg {
+        margin: 0px auto;
+        display: block;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+.toggle-input:not(checked) ~ .toggle-content {
+    display: none;
+}
+
+.toggle-input:checked ~ .toggle-content {
+    display: block !important;
+}
+
+.toggle-input:checked + div.icon::after {
+    content: '';
+    border-left: 12px solid transparent;
+    border-top: 0;
+    border-right: 12px solid transparent;
+    width: 0;
+    top: 30px;
+    position: absolute;
+    height: 0;
+    border-bottom: 12px solid #FFF;
+    margin-left: -5px;
+}
+
+#divAlertas > div[data-count]::after {
+    content: attr(data-count);
+    position: relative;
+    font-size: 11px;
+    background-color: #d2322d;
+    color: #FFF;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    top: -10px;
+    left: 14px;
+    display: inline-block;
+}
+
+div#menu ul.menu {
+    background-size: contain;
+    margin-left: -6px;
+}
+
+#divusuarioAlta, #divnominaAlta, #divusuarioFicha, #divnominaFicha, #divusuarioReq, #divnominaReq {
+    display: none !important;
+}
+
+#divprincipal {
+    border: none !important;
+    top: unset !important;
+}
+
+#divAlertas .toggle-content a.sinLeer {
+    font-weight: 600;
+    font-size: 13px;
+    background-color: aliceblue;
+}
+
+    #divAlertas .toggle-content a.sinLeer h5 {
+        font-weight: 600;
+    }

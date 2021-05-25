@@ -1,0 +1,369 @@
+﻿body {
+}
+
+
+
+  
+   #divencabezado
+{   
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:80px;
+  
+    background-color:White ;
+    text-align:center;
+    }
+      
+    #divprincipal
+{   
+ position:relative;
+    margin:0 auto;
+    top: 50px;
+    height: 700px;
+   
+    background-color:White;
+    border-style:solid;
+    border-color:#084B8A;
+    z-index: 0;
+    }
+      
+      
+  #titulomaster
+    {
+       
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:100px;
+    width:1000px;
+    background-color:White ;
+        
+    }
+
+#divRequerimiento
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 200px;
+    left:130px;
+    height: 500px;
+    width:750px;
+    background-color:white;
+    display:block; 
+
+    }
+
+   #divlblfolioReq
+   
+   {   
+    position:absolute;
+    top: 0px;
+    left:0px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+}   
+   
+   
+   #divlblidReq
+ {   
+    position:absolute;
+    top: 50px;
+    left:0px;
+    height: 25px;
+    width:98px;
+    background-color:white;
+    text-align:left;
+}   
+   
+   
+   #divlblReq
+ {   
+  position:absolute;
+    top: 0px;
+    left:150px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:center;
+}      
+   
+   #divlblCantidad
+ {   
+  position:absolute;
+    top: 0px;
+    left:300px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:center;
+}      
+   
+      #divlblObservacion
+ {   
+  position:absolute;
+    top: 0px;
+    left:450px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:center;
+}    
+   
+ 
+   
+   #divdrpReq
+    {   
+  position:absolute;
+    top: 50px;
+    left:150px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:center;
+}  
+   
+   
+   #divtxtCantidad
+    {   
+  position:absolute;
+    top: 50px;
+    left:300px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:center;
+}      
+   
+   
+   #divImagenAgregar
+    {   
+    position:absolute;
+    top: 50px;
+    left:700px;
+    height: 25px;
+    width:50px;
+    background-color:white;
+    text-align:center;
+}      
+
+   #divtxtObservacion
+    {   
+    position:absolute;
+    top: 50px;
+    left:450px;
+    height: 25px;
+    width:200px;
+    background-color:white;
+    text-align:center;
+}      
+
+
+
+
+
+
+#DivGrid
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    font-size: small;
+    position:absolute;
+    top: 111px;
+    left:0px;
+    height: 150px;
+    width:650px;
+    background-color:white;
+    overflow: scroll;
+    }
+    
+    
+   #divlblHoraInsta
+   {
+       
+     position:absolute;  
+    top: 280px;
+    left:0px;
+    height: 25px;
+    width:170px;
+    background-color:white;
+    text-align:left;
+       
+       }
+       
+       
+   #divtxtHoraInsta
+     {   
+     position:absolute;
+    top: 280px;
+    left:200px;
+    height: 25px;
+    width:60px;
+    background-color:white;
+    text-align:left;
+    
+    }
+       
+
+    #divlblFechaInsta
+    {
+        
+    position:absolute;  
+    top: 315px;
+    left:0px;
+    height: 25px;
+    width:170px;
+    background-color:white;
+    text-align:left;  
+        
+        }
+        
+     #divtxtFechaInsta   
+     {
+         
+    position:absolute;
+    top: 315px;
+    left:200px;
+    height: 25px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+    
+         
+         }
+        
+
+   #divlblResponsable
+   {
+    position:absolute;  
+    top: 350px;
+    left:0px;
+    height: 25px;
+    width:500px;
+    background-color:white;
+    text-align:left;  
+       
+       
+       }
+   
+   
+   #divtxtResponsable
+   {
+    position:absolute;
+    top: 385px;
+    left:200px;
+    height: 25px;
+    width:420px;
+    background-color:white;
+    text-align:left;
+    
+       
+       }
+   
+    
+       #divlblCeremonia
+ {   
+  position:absolute;
+    top: 385px;
+    left:0px;
+    height: 25px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+}    
+    
+    
+    #divDrpCeremonia
+     {   
+      position:absolute;
+    top: 385px;
+    left:200px;
+    height: 25px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+    
+    }
+    
+    
+    
+    
+       #divlblAforo
+ {   
+  position:absolute;
+    top: 420px;
+    left:0px;
+    height: 25px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+}    
+    
+    
+    #divtxtAforo
+     {   
+      position:absolute;
+    top: 420px;
+    left:200px;
+    height: 25px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    #divGuardar
+  {   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 650px;
+    left:350px;
+    height: 20px;
+    width:120px;
+    background-color:white;
+
+    }
+      
+    #divCancelar
+  {   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 650px;
+    left:500px;
+    height: 20px;
+    width:120px;
+    background-color:white;
+
+    }
+      
+      #divusuarioReq
+{   
+    color:blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 270px;
+    left: 1050px;
+    width: 50px;
+    height: 27px;
+    }
+   
+      #divnominaReq
+{   
+    color:blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+    width: 50px;
+    height: 27px;
+    }
+   

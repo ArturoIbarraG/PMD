@@ -1,0 +1,1286 @@
+﻿body {
+}
+
+
+   
+   #divencabezado
+{   
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:80px;
+    width:800px;
+    background-color:White ;
+    text-align:center;
+    }
+      
+   #divusuarioAlta
+{   
+    color:blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 270px;
+    left: 1050px;
+    width: 50px;
+    height: 27px;
+    }
+   
+      #divnominaAlta
+{   
+    color:blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+    width: 50px;
+    height: 27px;
+    }
+   
+   
+
+   
+   
+
+   
+     #divlblencabezado
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 26px;
+    left: 162px;
+    width: 452px;
+    height: 27px;
+}  
+
+
+    #divprincipal
+{   
+ position:relative;
+    margin:0 auto;
+    top: 50px;
+    height: 900px;
+    width:1000px;
+    background-color:White;
+    border-style:solid;
+    border-color:#084B8A;
+    z-index: 0;
+    }
+      
+      
+#divalta
+{   
+    font-family: "Segoe UI Web Light", "Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    font-size :10;
+    position:absolute;
+    left:0px;
+    height: 600px;
+    width:510px;
+    background-color:white;
+    display:block; 
+
+    }
+    
+    
+
+    
+ #divlblfolio
+{   
+    position:absolute;
+    top: 0px;
+    left:10px;
+    height: 25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+}   
+    
+
+    
+ #divlblevento
+    
+{   
+    position:absolute;
+    top: 35px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+}     
+ 
+
+ 
+ 
+  #divlblsecretaria
+    
+{   
+    position:absolute;
+    top: 70px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+   #divlbldireccion
+    
+{   
+    position:absolute;
+    top: 105px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+
+#divlblTipoEvento
+{
+    position:absolute;
+    top: 140px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+    }
+ 
+ 
+ 
+ #divlblDescripcion
+ 
+ {
+    position:absolute;
+    top: 175px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+    }
+ 
+ 
+  #divlblLugar
+    
+{   
+    position:absolute;
+    top: 235px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+ 
+ 
+    #divlblcolonia
+    
+{   
+    position:absolute;
+    top: 270px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+     #divlblcalle
+    
+{   
+    position:absolute;
+    top: 305px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+ 
+      #divlblnumext
+    
+{   
+    position:absolute;
+    top: 340px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+  
+      #divlblnumint
+    
+{   
+    position:absolute;
+    top: 340px;
+    left:305px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+
+    #divlblfecha
+    
+{   
+    position:absolute;
+    top: 370px;
+    left:10px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+ 
+ 
+    
+   #divtxtfolio
+    
+{   
+    position:absolute;
+    top: 0px;
+    left:150px;
+    height:25px;
+    width:130px;
+    background-color:white;
+    text-align:left;
+}     
+
+    
+    #divlblmsjcambio
+    {
+        color:Red;
+		font-size:medium;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:0px;
+        left:305px;
+        height:25px;
+        width:174px;
+    }
+    
+ 
+    #divddlevento
+    
+{   
+   
+    position:absolute;
+    top: 35px;
+    left:150px;
+    height:30px;
+    width:350px;
+    background-color:white;
+    text-align:left;
+} 
+    #divddlsecretaria
+    {   
+    position:absolute;
+    top: 70px;
+    left:150px;
+    height:30px;
+    width:340px;
+    background-color:white;
+    text-align:left;
+} 
+
+#divddldireccion
+    {   
+    position:absolute;
+    top: 105px;
+    left:150px;
+    height:30px;
+    width:340px;
+    background-color:white;
+    text-align:left;
+} 
+
+
+  #divddlTipoEvento  
+        {   
+    position:absolute;
+    top: 140px;
+    left:150px;
+    height:30px;
+    width:330px;
+    background-color:white;
+    text-align:left;
+} 
+      
+   #divddlDescripcion 
+   
+           {   
+    position:absolute;
+    top: 175px;
+    left:150px;
+    height:50px;
+    width:340px;
+    background-color:white;
+    text-align:left;
+} 
+
+
+#divtxtLugar
+    {   
+    position:absolute;
+    top: 235px;
+    left:150px;
+    height:30px;
+    width:340px;
+    background-color:white;
+    text-align:left;
+} 
+
+
+    
+#divddlcolonia
+    {   
+    position:absolute;
+    top: 270px;
+    left:150px;
+    height:30px;
+    width:330px;
+    background-color:white;
+    text-align:left;
+} 
+
+#divddlcalle
+    {   
+    position:absolute;
+    top: 305px;
+    left:150px;
+    height:30px;
+    width:340px;
+    background-color:white;
+    text-align:left;
+} 
+
+
+
+#divtxtcalle
+    {   
+    position:absolute;
+    top: 265px;
+    left:150px;
+    height:30px;
+    width:330px;
+    background-color:white;
+    text-align:left;
+} 
+
+
+    #diverrorcalle
+    
+{   
+    color:Red;
+	font-size:large;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 265px;
+    left:480px;
+    height:25px;
+    width:10px;
+    background-color:white;
+    text-align:left;
+}   
+
+
+
+
+    #diverrorevento
+    
+{   
+    color:Red;
+	font-size:large;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 35px;
+    left:480px;
+    height:25px;
+    width:10px;
+    background-color:white;
+    text-align:left;
+}   
+
+
+#divnumext
+    {   
+    position:absolute;
+    top: 340px;
+    left:150px;
+    height:30px;
+    width:50px;
+    background-color:white;
+    text-align:left;
+} 
+
+#divlblerrornumext
+{
+		color:Red;
+		font-size:large;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:340px;
+        left:225px;
+        height:25px;
+        width:10px;
+		}
+
+
+
+#divrev1
+{
+		color:Red;
+		font-size:small;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:210px;
+        left:200px;
+        height:25px;
+        width:10px;
+		}
+
+
+
+
+
+#divnumint
+    {   
+    position:absolute;
+    top: 340px;
+    left:430px;
+    height:21px;
+    width:50px;
+    background-color:white;
+    text-align:left;
+    
+   
+   
+} 
+    
+
+#divlblerrornumint
+{
+		color:Red;
+		font-size:large;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:300px;
+        left:480px;
+        height:25px;
+        width:10px;
+		}
+
+#divtxtfecha
+    {   
+    position:absolute;
+    top: 370px;
+    left:150px;
+    height:30px;
+    width:88px;
+    background-color:white;
+    text-align:left;
+    right: 260px;
+}
+
+
+
+
+#divlblerrorfecha
+{
+		color:Red;
+		font-size:large;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:335px;
+        left:225px;
+        height:25px;
+        width:10px;
+        background-color:white;
+
+        
+        
+		}
+
+     #divlblnumbenef
+    
+{   
+    position:absolute;
+    top:485px;
+    left:10px;
+    height:25px;
+    width:140px;
+    background-color:white;
+    text-align:left;
+}   
+
+#divtxtnumbenef
+    {   
+    position:absolute;
+    top: 485px;
+    left:210px;
+    height:25px;
+    width:90px;
+    background-color:white;
+    text-align:left;
+    
+}
+
+
+#divlblCheckPrensa
+
+ {   
+    position:absolute;
+    top: 459px;
+    left:10px;
+    height:25px;
+    width: 245px;
+    background-color:white;
+    text-align:left;
+} 
+ 
+
+#divlblResponsableEvento
+{
+    
+    position:absolute;
+    top: 510px;
+    left:10px;
+    height:25px;
+    width:190px;
+    background-color:white;
+    text-align:left;
+   
+    }
+
+
+#divtxtResponsableEvento
+{
+     position:absolute;
+    top: 510px;
+    left:210px;
+    height:25px;
+    width:295px;
+    background-color:white;
+    text-align:left;
+    
+    
+    }
+
+#divlblTelefonoResponsable
+{
+    
+    position:absolute;
+    top: 535px;
+    left:10px;
+    height:25px;
+    width:190px;
+    background-color:white;
+    text-align:left;
+    
+    }
+    
+    #divtxtTelefonoResponsable
+    {
+        
+    position:absolute;
+    top: 535px;
+    left:210px;
+    height:25px;
+    width:275px;
+    background-color:white;
+    text-align:left;
+        }
+        
+        
+        
+     
+#divlblmsjerror
+{
+		color:Red;
+		font-size:medium;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:530px;
+        left:5px;
+        height:20px;
+        width:145px;
+		}
+   
+        
+        
+
+#divlblCheckLimpiezaArea
+{
+    
+     position:absolute;
+    top: 430px;
+    left:10px;
+    height:25px;
+    width:245px;
+    background-color:white;
+    text-align:left;
+    
+    }
+
+
+
+
+
+
+#divlblHoraSalidaAlcalde
+ {   
+    position:absolute;
+    top: 430px;
+    left:305px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+    } 
+
+
+ #divtxtHoraSalidaAlcalde
+    {   
+ position:absolute;
+    top: 430px;
+    left:430px;
+    height:30px;
+    width:62px;
+    background-color:white;
+    text-align:left;
+
+}
+
+
+
+ #divlblHoraFinal
+ {   
+    position:absolute;
+    top: 459px;
+    left:305px;
+    height:30px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+    } 
+
+
+
+ #divtxtHora
+    {   
+ position:absolute;
+    top: 459px;
+    left:430px;
+    height:30px;
+    width:62px;
+    background-color:white;
+    text-align:left;
+
+}
+
+
+
+
+#divlblCheckAlcalde
+{
+
+		font-size:medium;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+         top: 405px;
+    left:10px;
+    height:25px;
+ 
+     width: 245px;
+        background-color:white;
+        
+		}
+		
+#divlblHoraAlcalde
+
+ {   
+    
+   
+    position:absolute;
+    top: 400px;
+    left:305px;
+    height:25px;
+    width:125px;
+    background-color:white;
+     text-align:left;
+   
+} 		
+		
+
+ #divtxtHoraAlcalde
+  {   
+    position:absolute;
+    top: 400px;
+    left:430px;
+    height:30px;
+    width:62px;
+    background-color:white;
+
+} 		
+	
+
+
+#diverrorHora
+{
+		color:Red;
+		font-size:large;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:335px;
+        left:480px;
+        height:25px;
+        width:10px;
+       background-color:white;
+
+        
+		}
+
+
+ 
+ 
+ 
+
+    #diverrornumbenef
+    
+{   
+    color:Red;
+	font-size:large;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 370px;
+    left:225px;
+    height:25px;
+    width:10px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+	
+  
+
+ 
+  #divlblHora
+ 
+ {   
+    position:absolute;
+    top: 370px;
+    left:305px;
+    height:25px;
+    width:125px;
+    background-color:white;
+    text-align:left;
+} 
+
+ #divtxtHora1
+    {   
+    position:absolute;
+    top: 370px;
+    left:430px;
+    height:30px;
+    width:62px;
+    background-color:white;
+    text-align:left;
+}
+
+
+
+
+
+    #divmsjaltaMapa
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:525px;
+    left:150px;
+    height: 25px;
+    width:211px;
+    text-align:center;
+    }   
+
+
+
+#divExcelMapa
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:450px;
+    left:400px;
+    height:10%;
+    width:25%;
+    background-color:white;
+    text-align:center;
+    } 
+
+#divRequerimiento
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:450px;
+    left:50px;
+    height:10%;
+    width:10%;
+    background-color:white;
+    text-align:center;
+    } 
+
+#divFicha
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:450px;
+    left:200px;
+    height:10%;
+    width:10%;
+    background-color:white;
+    text-align:center;
+    }
+
+#divbtnAceptarMapa {
+    position: absolute;
+    top: 95.8%;
+    height: 8%;
+    width: 20%;
+    text-align: center;
+    right: 258px;
+}    
+#divbtnCancelarMapa
+{   
+    position:absolute;
+    top:100%;
+    left:281px;
+    height: 8%;
+    width:20%;
+    text-align:center;
+     left:250px;
+    }  
+
+#divbtnNuevaBusqueda
+{   
+    position:absolute;
+    top:450px;
+    left:200px;
+    height: 9%;
+    width:25%;
+    text-align:center;
+    } 
+
+
+
+    #divmapa
+{   
+    position:absolute;
+    top:100px;
+    left:520px;
+    height: 350px;
+    width:460px;
+    background-color:white;
+
+
+    }    
+
+
+
+
+#divExcel
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:75%;
+    left:89%;
+    height:5%;
+    width:10%;
+    background-color:white;
+    text-align:center;
+    }    
+    
+    
+    
+  
+  #divOperadoPor 
+    {
+  font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size :10;
+    position:absolute;
+    top:500px;
+    left:515px;
+    height: 100px;
+    width:460px;
+    background-color:white;
+        display:block 
+        }
+    
+    
+  
+  #divOperadoPorCambios
+    {
+          font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+            font-size :10;
+    position:absolute;
+    top:650px;
+    left:515px;
+    height: 100px;
+    width:460px;
+    background-color:white;
+        display:block 
+        }
+    
+    #divlblNombreOperador
+    {
+        
+    position:absolute;
+    top: 0px;
+    left:0px;
+    height: 25px;
+    width:102px;
+    background-color:white;
+    text-align:left;
+
+        }
+    
+      #divtxtNombreOperador
+    {
+        
+    position:absolute;
+     top: 0px;
+    left:125px;
+    height: 25px;
+    width:335px;
+    background-color:white;
+    text-align:left;
+
+        }
+    
+    
+ #divlblPuestoOperador
+        {
+        
+    position:absolute;
+    top: 25px;
+    left:0px;
+    height: 25px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+
+        }
+            
+            
+      
+ #divtxtPuestoOperador
+ {
+     
+    position:absolute;
+     top: 25px;
+    left:125px;
+    height: 25px;
+    width:335px;
+    background-color:white;
+    text-align:left;
+
+     
+     }
+     
+    
+   #divlblTelefonoOperador
+   {
+          position:absolute;
+    top: 50px;
+    left:0px;
+    height: 25px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+       
+       }
+   
+
+   #divtxtTelefonoOperador
+   {
+        position:absolute;
+     top: 50px;
+    left:125px;
+    height: 25px;
+    width:335px;
+    background-color:white;
+    text-align:left;
+
+       
+       }
+            
+    
+ #divlblCorreoOperador
+ {
+     position:absolute;
+    top: 75px;
+    left:0px;
+    height: 25px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+     }
+           
+          #divtxtCorreoOperador
+          {
+              
+                position:absolute;
+     top: 75px;
+    left:125px;
+    height: 25px;
+    width:335px;
+    background-color:white;
+    text-align:left;
+              
+              }
+           
+    
+    
+    
+    
+    
+
+#divbotones
+{   
+ font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+ position:absolute;
+    top:80%;
+    left:65%;
+    height:15%;
+    width:20%;
+    background-color:white;
+  text-align:center;
+    }    
+
+
+#divbtnAlta
+{   
+    position:absolute;
+    top:10%;
+    left:0%;
+    height:25%;
+    width:25%;
+    background-color:white;
+    text-align:center;
+    }
+
+#divbtnAceptar
+{   
+    position:absolute;
+    top:10%;
+    left:5%;
+    height: 25%;
+    width:25%;
+    background-color:white;
+    text-align:center;
+    }    
+
+#divbtnCambiar
+{   
+    position:absolute;
+    top:62%;
+    left:4%;
+    height:25%;
+    background-color:white;
+    text-align:center;
+    }  
+
+#divbtnCancelar
+{   
+    position:absolute;
+    top:16%;
+    left:58%;
+    height: 25%;
+    width:25%;
+    background-color:white;
+    text-align:center;
+    }  
+
+
+
+
+
+
+
+
+#divmsjalta
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:95%;
+    left:620px;
+    height: 25px;
+    width:273px;
+    background-color:white;
+    text-align:center;
+    }   
+
+
+#divgrid
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:85%;
+    left:0px;
+    height: 50px;
+    width:273px;
+    background-color:white;
+    text-align:center;
+    }   
+
+
+
+
+#divbotonesCaptura1
+{   
+ font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+ position:absolute;
+    top:80%;
+    left:65%;
+    height:15%;
+    width:20%;
+    background-color:white;
+  text-align:center;
+    }   
+    
+    
+    
+    #divgridCaptura1
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:85%;
+    left:0px;
+    height: 50px;
+    width:273px;
+    background-color:white;
+    text-align:center;
+    }   
+    
+   #divusuarioMapa
+{   
+    color:Blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: -42px;
+    left: 920px;
+    width: 50px;
+    height: 27px;
+    }
+   
+      #divnominaMapa
+{   
+    color:Blue;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: -42px;
+    left: 997px;
+    width: 50px;
+    height: 27px;
+    }
+    
+    
+
+
+    #divgridMapa
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:300%;
+    left:10px;
+    height: 25px;
+    width:273px;
+    text-align:center;
+   
+    }   
+
+
+      
+  #titulomaster
+    {
+       
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:100px;
+    width:1000px;
+    background-color:White ;
+        
+    }
+    
+    
+       #divusuarioCambio
+{   
+    color:Orange;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 220px;
+    left: 1040px;
+    width: 50px;
+    height: 27px;
+    right: 94px;
+}
+   
+      #divnominaCambio
+{   
+    color:Orange;
+    font-size:x-small;
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position: absolute;
+    top: 220px;
+    left: 1090px;
+    width: 50px;
+    height: 27px;
+    }
+    
+    
+#divinputboxCambio
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:180%;
+    left:0px;
+    height: 2px;
+    width:273px;
+    background-color:white;
+    text-align:center;
+    } 
+   
+
+
+#divinputbox
+{   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top:500%;
+    left:0px;
+    height: 2px;
+    width:273px;
+    background-color:white;
+    text-align:center;
+   
+    
+    }  

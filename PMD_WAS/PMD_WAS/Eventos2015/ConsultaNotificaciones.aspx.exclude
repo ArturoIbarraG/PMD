@@ -1,0 +1,9 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ConsultaNotificaciones.aspx.vb" Inherits="Eventos2015_ConsultaNotificaciones" MasterPageFile="~/MasterGlobal.master" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<asp:Content ContentPlaceHolderID="HeadContent" runat="server"></asp:Content>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+
+
+
+</asp:Content>

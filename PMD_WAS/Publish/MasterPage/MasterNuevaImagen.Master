@@ -1,0 +1,280 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterNuevaImagen.master.vb" Inherits="PMD_WAS.MasterNuevaImagen" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta runat="Server" name="keywords" id="KeywordsTag" content="" />
+    <meta runat="Server" name="description" id="DescriptionTag" content="" />
+    <meta runat="Server" name="generator" id="GeneratorTag" content="" />
+    <meta runat="Server" name="copyright" id="CopyrightTag" content="" />
+    <link href="/images/favicon.ico" rel="icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeacion Financiera</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-switch.min.css" rel="stylesheet" />
+    <link href="/Content/NuevaImagen/Master.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/sweetalert2/4.2.4/sweetalert2.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="/Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManager" runat="server" AsyncPostBackTimeout="36000">
+        </asp:ScriptManager>
+        <asp:Label ID="lblEsTest" runat="server" CssClass="EsTest"></asp:Label>
+        <asp:HiddenField ID="hdnDireccionMasterModal" runat="server" ClientIDMode="Static" />
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div id="content-sidebar">
+                    <div class="sidebar-header">
+                        <div id="LogoSideBarHeader">
+                            <asp:Label ID="lblLetraHeader" runat="server" Text="R"></asp:Label>
+                        </div>
+                        <asp:Label ID="lblNombreUsuario" runat="server" CssClass="LabelNombreUsuario" Text="Ricardo"></asp:Label><br />
+                        <asp:Label ID="lblDireccion" runat="server" CssClass="etiqueta-direccion" Text="Direccion de Ingresos"></asp:Label>
+                    </div>
+                    <div id="contenedorPresupuesto">
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="noselect">Presupuesto 
+                                </h6>
+                            </div>
+                            <div class="col-6 text-right">
+                                <asp:DropDownList ID="comboAnioProgressPresupuesto" runat="server" ClientIDMode="Static" CssClass="form-control black-small" onchange="javascript:actualizaAnioProgressPresupuesto();">
+                                    <asp:ListItem Value="2020" Text="2020"></asp:ListItem>
+                                    <asp:ListItem Value="2021" Text="2021"></asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="contentProgressPresupuestoMaster" class="progress" onclick="javascript:muestraInformacionPresupuesto();"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedorMenu">
+                        <ul class="list-unstyled components">
+                            <asp:Repeater ID="rptMenuPrincipal" runat="server" OnItemDataBound="rptMenu_ItemDataBound">
+                                <ItemTemplate>
+                                    <asp:HiddenField ID="hdnIdMenu" runat="server" Value='<%# Eval("id") %>' />
+                                    <li id="li<%# Eval("nombre").ToString().Replace(" ", "") %>">
+                                        <a href="<%# If(Eval("url").ToString() = "", String.Format("#{0}subMenu", Eval("nombre").ToString().Replace(" ", "")), Eval("url").ToString()) %>" class="<%# If(Eval("url").ToString() = "", "dropdown-toggle", "") %>" data-toggle="<%# If(Eval("url").ToString() = "", "collapse", "") %>" aria-expanded="false"><span><%# Eval("nombre").ToString() %></span></a>
+                                        <ul class="collapse list-unstyled sub-menu" id="<%# If(Eval("url").ToString() = "", String.Format("{0}subMenu", Eval("nombre").ToString().Replace(" ", "")), Eval("url").ToString()) %>">
+                                            <asp:Repeater ID="rptSubMenu" runat="server">
+                                                <ItemTemplate>
+                                                    <li id="<%# String.Format("liSub{0}", Eval("nombre").ToString().Replace(" ", "")) %>">
+                                                        <a href="<%# Eval("url") %>"><span><%# Eval("nombre").ToString() %></span></a>
+                                                    </li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </div>
+                    <a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Password.aspx">
+                        <div id="buttonCerrarSesionHome">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <label>Cerrar sesión</label>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="col-4 col-md-2">
+                            <button type="button" id="sidebarCollapse" class="btn btn-menu">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="d-none d-md-block col-md-5 col-lg-4">
+                            <asp:Image ID="imgLogo" runat="server" CssClass="logoPrincipal" ImageUrl="~/images/logo.png?v=1" />
+                            <asp:Image ID="Image1" runat="server" CssClass="logoSecundario" ImageUrl="~/images/san_nicolas.png?v=1" />
+                        </div>
+                        <div class="d-none d-md-block col-sm-4 col-md-3 col-lg-5 text-right">
+                            <asp:Panel ID="pnlInboxComandas" runat="server">
+                                <div id="divAlertas">
+                                    <div class="alert-action">
+                                        <label>
+                                            <input id="chkAlertas" type="checkbox" value="selected" class="toggle-input alertas" />
+                                            <div class="icon">
+                                                <i class="fa fa-bell" style="font-size: 19px; margin-top: 4px;" aria-hidden="true"></i>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                        </div>
+                        <div class="col-8 col-md-2 col-lg-1 text-right">
+                            <div id="LogoSideBarHeaderMini">
+                                <asp:Label ID="lblLetraHeaderMini" runat="server" Text="R"></asp:Label>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container-fluid">
+                    <h4 class="title">
+                        <asp:Label ID="lblNombrePagina" runat="server" Text=""></asp:Label></h4>
+                    <div class="container-body col-12">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                </div>
+
+                <asp:Label runat="server" ID="lblMessage"></asp:Label>
+                <!-- Footer -->
+                <footer class="page-footer font-small blue">
+                    <div class="container-fluid footer-copyright py-3">
+                        <div class="row">
+                            <div class="col-6">
+                                © 2020 Gobierno de San Nicolás
+                            </div>
+                            <div class="col-6 text-right">
+                                <i class="fas fa-bolt"></i>by inteliPOLIS
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer -->
+            </div>
+
+        </div>
+
+        <div id="screen-updating">
+            <h5>Procesando...</h5>
+        </div>
+
+        <div id="modalPresupuesto" class="modal fade modal-big" data-backdrop="static" data-keyboard="false" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Detalle del presupuesto</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <asp:UpdatePanel ID="updUpdatePresupuesto" runat="server">
+                            <ContentTemplate>
+                                <div id="contenedorDetallePresupuesto" class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h6 class="subtitle">Administración:</h6>
+                                            <asp:DropDownList ID="ddlAdmonModal" runat="server" Width="100%" CssClass="form-control select-basic-simple" onchange="javascript:muestraInformacionPresupuesto();"></asp:DropDownList>
+                                        </div>
+                                        <div class="col-3">
+                                            <h6 class="subtitle">Año:</h6>
+                                            <asp:DropDownList ID="ddlAnioModal" runat="server" Width="100%" CssClass="form-control select-basic-simple" onchange="javascript:muestraInformacionPresupuesto();"></asp:DropDownList>
+                                        </div>
+                                        <div class="col-3">
+                                            <h6 class="subtitle">Secretaría:</h6>
+                                            <asp:DropDownList ID="ddlSecretariaModal" runat="server" Width="100%" CssClass="form-control select-basic-simple" onchange="javascript:muestraInformacionPresupuesto();"></asp:DropDownList>
+                                        </div>
+                                        <div class="col-3">
+                                            <h6 class="subtitle">Direcciones:</h6>
+                                            <asp:DropDownList ID="ddlDireccionModal" runat="server" Width="100%" CssClass="form-control select-basic-simple" onchange="javascript:muestraInformacionPresupuesto();"></asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <asp:GridView ID="grdModalPresupuesto" runat="server" CssClass="table table-bordered table-hover" AutoGenerateColumns="false" Width="100%" Visible="false">
+                                                    <Columns>
+                                                        <asp:BoundField HeaderText="Secretaría" DataField="Nombr_secretaria" />
+                                                        <asp:BoundField HeaderText="Dirección" DataField="Nombr_direccion" />
+                                                        <asp:BoundField HeaderText="Presupuesto total" DataField="Presupuesto" DataFormatString="{0:C2}" ItemStyle-HorizontalAlign="Right" />
+                                                        <asp:BoundField HeaderText="P. capturado" DataField="Capturado" DataFormatString="{0:C2}" ItemStyle-HorizontalAlign="Right" />
+                                                        <asp:BoundField HeaderText="P. autorizado" DataField="Autorizado" DataFormatString="{0:C2}" ItemStyle-HorizontalAlign="Right" />
+                                                        <asp:BoundField HeaderText="P. devengado" DataField="Devengado" DataFormatString="{0:C2}" ItemStyle-HorizontalAlign="Right" />
+                                                        <asp:BoundField HeaderText="P. comprometido" DataField="Comprometido" DataFormatString="{0:C2}" ItemStyle-HorizontalAlign="Right" />
+                                                    </Columns>
+                                                </asp:GridView>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div id="contenedorGraficoInfoPresupuesto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary text-right" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/Chart.min.js"></script>
+        <script type="text/javascript">
+            var urlAlertas = '<%= ResolveClientUrl("~/WSEventos.asmx/ObtieneMensajes") %>';
+            var urlMarcaLeidos = '<%= ResolveClientUrl("~/WSEventos.asmx/MarcaLeidos") %>';
+            var urlPresupuesto = '<%= ResolveClientUrl("~/WSEventos.asmx/ObtieneInformacionPresupuesto") %>';
+            var empleado = '<%= Session("Clave_empl") %>';
+            var urlProgressPresupuesto = '<%= ResolveClientUrl("~/WSEventos.asmx/ObtieneProgressPresupuesto") %>';
+            var params = '{clave_empl:' + empleado + '}'
+
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginReq);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endReq);
+
+            function beginReq(sender, args) {
+                try {
+                    $('#screen-updating').show();
+                }
+                catch{ }
+            }
+
+            function endReq(sender, args) {
+                try {
+                    validaOcultarHeader();
+                    $('.select-basic-simple').select2();
+                    $('#screen-updating').hide();
+
+                    muestraProgressPresupuesto();
+                }
+                catch (x) { console.log(x); }
+            }
+
+            $(document).ready(function () {
+                validaOcultarHeader();
+                muestraProgressPresupuesto();
+            });
+
+            function validaOcultarHeader() {
+                if (window.location.href.toString().toLowerCase().indexOf('?folio=') > -1) {
+                    $('#sidebar').hide();
+                    $('nav.navbar.navbar-expand-lg').hide();
+                    $('footer').hide();
+                }
+            }
+        </script>
+
+        <script type="text/javascript" src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/select2.min.js" type="text/javascript"></script>
+        <script src="/Scripts/NuevaImagen/Master.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.mask.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/sweetalert2/4.2.4/sweetalert2.min.js" type="text/javascript"></script>
+    </form>
+</body>
+</html>
+

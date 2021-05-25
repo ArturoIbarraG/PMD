@@ -1,0 +1,222 @@
+﻿body 
+{
+		background-color:White;
+}
+
+/*#Master_Div
+{
+		text-align:center;
+		position: absolute;
+		top:50%;
+		left:50%;
+		width:900px;
+		margin-left:-450px;
+		height:600px;
+		margin-top:-300px;
+		border:1px solid None;
+}*/
+
+#Master_Div
+{
+		text-align:center;
+		position:relative;
+		width:900px;
+		margin:0 auto;
+		top:20px;
+		height:600px;
+		border:1px solid None;
+}
+
+#Div_Imagen
+{
+		text-align:center;
+		position: absolute;
+		top:0%;
+		left:1.5%;
+		width:53%;
+		height:56%;
+		border:1px solid None;
+}
+
+#Div_Pie_Imagen
+{
+	    background-color:white;
+	    color:#BA0D23;
+		font-family:"Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		position: absolute;
+		top:56%;
+		left:1.5%;
+		width:53%;
+		height:25%;
+		border:1px solid None;
+}
+
+#Div_Pie_Imagen_Texto1
+{
+	    background-color:white;
+	    color:White;
+	    text-align:left;
+        font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		font-size:xx-large;
+		position: absolute;
+		top:10%;
+		left:5%;
+		width:94%;
+		height:30%;
+		border:1px solid white;
+}
+
+#Div_Pie_Imagen_Texto2
+{
+	    background-color:white;
+	    color:White;
+	    text-align:left;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		position: absolute;
+		top:50%;
+		left:5%;
+		width:94%;
+		height:30%;
+		border:1px solid white;
+}
+
+#Div_Logo
+{
+		text-align:center;
+		position: absolute;
+		top:5%;
+		left:64%;
+		width:29%;
+		height:17%;
+		border:1px solid None;
+}
+
+#Div_Usuario
+{
+		text-align:center;
+		position: absolute;
+		top:27%;
+		right:1.5%;
+		float:right;
+		width:37.5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Contraseña
+{
+		text-align:center;
+		position: absolute;
+		top:34%;
+		right:1.5%;
+		float:right;
+		width:37.5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Label1
+{
+		color:Red;
+		font-size:xx-large;
+		text-align:center;
+		position: absolute;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		top:27%;
+		left:55%;
+		width:5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Label2
+{
+		color:Red;
+		font-size:xx-large;
+		text-align:center;
+		position: absolute;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		top:34%;
+		left:55%;
+		width:5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Label3
+{
+		color:Red;
+		font-size:small;
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:68%;
+		right:1.5%;
+		float:right;
+		width:37.5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Btn_Aceptar
+{
+		
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		color:White;
+		display:table-cell;
+		vertical-align:middle;
+		position: absolute;
+		top:46%;
+		left:60%;
+		width:91px;
+		height:30px;
+		}
+
+#Div_Info
+{
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:78%;
+		right:1.5%;
+		float:right;
+		width:37.5%;
+		height:5%;
+		border:1px solid None;
+}
+
+#Div_Pie
+{
+		text-align:center;
+		position: absolute;
+		top:90%;
+		left:0%;
+		width:100%;
+		height:10%;
+		border-top:1px solid Gray;
+}
+
+#Div_Info_Sys
+{
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:left;
+		position: absolute;
+		top:0%;
+		left:0%;
+		width:40%;
+		height:50%;
+		border:1px solid None;
+}
+
+#Div_facebook
+{
+		font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+		text-align:right;
+		position: absolute;
+		top:0%;
+		right:0%;
+		float:right;
+		width:30%;
+		height:50%;
+		border:1px solid None;
+}

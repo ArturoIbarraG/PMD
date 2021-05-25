@@ -1,0 +1,42 @@
+﻿body {
+}
+  
+#divprincipal
+{   
+ position:relative;
+    margin:0 auto;
+    top: 50px;
+    height: 700px;
+  
+    background-color:White;
+    border-style:solid;
+    border-color:#084B8A;
+    z-index: 0;
+    }
+    
+    
+
+#titulomaster
+    {
+       
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:100px;
+ 
+    background-color:White ;
+    
+   
+        
+    }
+    
+    #divmenuprincipal
+{   
+    position:relative;
+    margin:0 auto;
+    width:1000px;
+    
+
+    }
+    
+    

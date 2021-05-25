@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style type="text/css">
+        h1.header {
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+
+        h4.subheader {
+            margin-top: 2px;
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            font-family: Cambria;
+            background-size: 50%;
+            background-position-y: 42%;
+        }
+
+        p.principal {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        label {
+            font-weight: 100 !important;
+        }
+
+        th label {
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .tabla-contrato thead tr th {
+            background-color: #17365D;
+            color: #FFF;
+            padding: 10px;
+        }
+
+        tfoot h3 {
+            border-top: 1px solid;
+            display: block;
+            width: 200px;
+            margin: 0px auto;
+            padding: 2px 80px 7px;
+        }
+
+        .tabla-contrato tbody td {
+            border: 1px solid;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr>
+                <th style="text-align:left;"> <img src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/logo_formato.png" alt="logo" /></th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <div style="text-align:center;">
+                        <h1 class="header">
+                            SOLICITUD DE MATERIAL
+                        </h1>
+                        <h1 class="header">
+                            REFERENCIA <%REFERENCIA%>
+                        </h1>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label><%FECHA%></label>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>CONTRATO:</label>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>PROVEEDOR: </label><b><%PROVEEDOR%></b>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>DIRECCIÓN: </label><b><%DIRECCION%></b>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <b><%SECRETARIA%></b>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>ACTIVIDAD: </label><b><%ACTIVIDAD%></b>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <label>SUBACTIVIDAD: </label><b><%SUBACTIVIDAD%></b>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><br /><br /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table cellpadding="0" cellspacing="0" class="tabla-contrato" width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <b>No.</b>
+                                </th>
+                                <th>
+                                    <b>Descripción Articulo</b>
+                                </th>
+                                <th>
+                                    <b>Cantidad</b>
+                                </th>
+                                <th>
+                                    <b>Unidad de medida</b>
+                                </th>
+                                <th>
+                                    <b>Precio unitario</b>
+                                </th>
+                                <th>
+                                    <b>Importe</b>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%CONTENT_TABLE%>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="4"></th>
+                                <th><b>SUBTOTAL:</b></th>
+                                <th>
+                                    <label><%SUBTOTAL%></label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="4"></th>
+                                <th><b>IVA:</b></th>
+                                <th><label><%IVA%></label></th>
+                            </tr>
+                            <tr>
+                                <th colspan="4"></th>
+                                <th><b>TOTAL:</b></th>
+                                <th><label><%TOTAL%></label></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <br /><br />
+                    <h3>AUTORIZACIÓN</h3>
+                    <label>TITULAR</label>
+                </td>
+                <td style="text-align:right;">
+                    <br /><br />
+                    <h3>AUTORIZACIÓN</h3>
+                    <label>ENLACE ADMINISTRATIVO</label>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

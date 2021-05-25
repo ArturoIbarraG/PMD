@@ -1,0 +1,31 @@
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll.config
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.pdb
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csprojAssemblyReference.cache
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CoreCompileInputs.cache
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.pdb
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\Select.HtmlToPdf.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\Select.HtmlToPdf.xml
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Release\Select.Html.dep
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CopyComplete
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll.config
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.pdb
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Release\Select.HtmlToPdf.xml
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Release\Select.Html.dep
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csprojAssemblyReference.cache
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CoreCompileInputs.cache
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CopyComplete
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.dll
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.pdb
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll.config
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.dll
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Release\IntelipolisEngine.pdb
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Release\Select.HtmlToPdf.xml
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Release\Select.Html.dep
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csprojAssemblyReference.cache
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CoreCompileInputs.cache
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.csproj.CopyComplete
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.dll
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Release\IntelipolisEngine.pdb

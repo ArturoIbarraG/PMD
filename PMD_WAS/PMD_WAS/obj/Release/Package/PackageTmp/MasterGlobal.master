@@ -1,0 +1,228 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Inherits="PMD_WAS.MasterGlobal" Codebehind="MasterGlobal.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="Menuapy/menu.css" rel="stylesheet" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/sweetalert2/4.2.4/sweetalert2.min.css" rel="stylesheet" />
+
+    <link type="text/css" href="Content/MasterGlobal.css" rel="Stylesheet" />
+
+    <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var urlAlertas = '<%= ResolveClientUrl("~/WSEventos.asmx/ObtieneMensajes") %>';
+        var urlMarcaLeidos = '<%= ResolveClientUrl("~/WSEventos.asmx/MarcaLeidos") %>';
+        var empleado = '<%= Session("Clave_empl") %>';
+        var params = '{clave_empl:' + empleado + '}'
+
+        Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginReq);
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endReq);
+
+        function beginReq(sender, args) {
+            try {
+                $('#screen-updating').show();
+            }
+            catch{ }
+        }
+
+        function endReq(sender, args) {
+            try {
+                $('#screen-updating').hide();
+            }
+            catch (x) { console.log(x); }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/4.2.4/sweetalert2.min.js"></script>
+    <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+    <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/select2.min.js" type="text/javascript"></script>
+    <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/MasterGlobal.js" type="text/javascript"></script>
+    <style type="text/css">
+        .ajax__calendar {
+            z-index: 9999;
+        }
+
+        .show-swal2 {
+            z-index: 9999;
+        }
+
+        .swal2-overlay {
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="script" runat="server"></asp:ScriptManager>
+        <div class="page">
+            <asp:Panel ID="pnlHeader" runat="server">
+                <div class="header">
+                    <div class="title">
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/logo.png" Style="height: 60px; display: inline-block; margin: 6px;" />
+                        <h1 style="display: inline-block;">Planeación financiera</h1>
+                    </div>
+                    <div class="loginDisplay">
+                        <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                            <AnonymousTemplate>
+                                [ <a href="~/Password.aspx" id="HeadLoginStatus" runat="server">Cerrar Sesión</a> ]
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                Welcome <span class="bold">
+                                    <asp:LoginName ID="HeadLoginName" runat="server" />
+                                </span>!
+                        [ <a href="~/Password.aspx" id="A1" runat="server">Cerrar Sesión</a> ]
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                    <div id="menu">
+                        <ul class="menu">
+                            <li><a href="/PlaneacionFinanciera/Bienvenido.aspx"><span>INICIO</span></a></li>
+                            <asp:Repeater ID="rptMenu" runat="server" OnItemDataBound="rptMenu_ItemDataBound">
+                                <ItemTemplate>
+                                    <asp:HiddenField ID="hdnId" runat="server" Value='<%# Eval("id") %>' />
+                                    <li><a href="#"><span><%# Eval("nombre") %></span></a>
+                                        <div>
+                                            <ul>
+                                                <asp:Repeater ID="rptSecundario" runat="server">
+                                                    <ItemTemplate>
+                                                        <li><a href='<%# String.Format("https://admin.sanicolas.gob.mx/PlaneacionFinanciera{0}", Eval("url")) %>'><span><%# Eval("nombre") %></span></a></li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                            <!--
+
+                        <%If Session("seguridad") = 1 Or Session("seguridad") = 3 Then%>
+                        <li><a href="#" class="parent"><span>ADMINISTRADOR</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Administrador.aspx" <%--class="parent"--%>><span>Cierres</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AltaDeAdministradores.aspx"><span>Alta De Usuarios</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AccesosUsuariosSecretaria.aspx"><span>Permisos A Usuarios</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ReporteLineasFaltantesDeCaptura.aspx"><span>Líneas Faltantes De Captura</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <%End If%>
+                        <li><a href="PreCaptura.aspx"><span>Captura</span></a></li>
+                        <li><a href="#"><span>Reportes</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Transparencia2.aspx"><span>Transparencia</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ReporteCumplimiento.aspx"><span>Cumplimiento</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ReporteGrafico.aspx"><span>Prueba Grafica</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Programa.aspx"><span>Avance Programa</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Actividades.aspx"><span>Avance Actividades</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Proyectos.aspx"><span>Avance Proyectos</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ConsultaSecretaria.aspx"><span>Secretaría</span></a></li>
+                                    <li><a href=""><span>Ejes</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ReporteSubActividad.aspx"><span>Concentrado Presupuesto</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <%If Session("seguridad") = 3 Then%>
+                        <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Costeo.aspx"><span>Costeo</span></a>
+                        </li>
+                        <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ReporteCosteo.aspx"><span>Reporte Costeo</span></a>
+                        </li>
+                        <%End If%>
+                        <li><a href="#"><span>Programa Operativo Anual</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AsignarRecursosMetas.aspx"><span>Asignar recursos y metas</span></a> </li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AsignacionRecursos.aspx"><span>Asignar Recursos Humanos</span></a> </li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AsignarVehiculos.aspx"><span>Asignar Vehículos </span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/AutorizacionLineas.aspx"><span>Autorizacion</span></a> </li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/ImpresionOficios.aspx"><span>Impresión de Oficios</span></a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><span>Eventos</span></a>
+                            <div>
+                                <ul>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 3 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Alta.aspx"><span>Alta</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 3 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Cambios.aspx"><span>Cambios</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 6 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Validacion.aspx"><span>Valida evento</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 4 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Requerimientos.aspx"><span>Requerimiento</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 5 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Ficha.aspx"><span>Ficha</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 7 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/ConsultaEstatus.aspx"><span>Consulta estatus</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 7 Then%>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Consulta.aspx"><span>Consulta mapa</span></a></li>
+                                    <% End If%>
+
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos2015/Evidencias.aspx"><span>Evidencias</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Eventos/listado/Eventos.aspx"><span>Listado</span></a></li>
+                                    <li><a href="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/EventoPresupuesto.aspx"><span>Presupuesto</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        -->
+                        </ul>
+                    </div>
+
+                </div>
+                <br />
+                <br />
+                <div style="position: absolute; top: 75px; left: 823px; height: 43px; width: 400px; color: white; margin-top: -2%;">
+                    <asp:Label ID="Label5" runat="server" Text="Bienvenido(a):"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                    <div id="notificationInbox" style="display: inline-block; margin-left: 20%;">
+                        <div id="divAlertas">
+                            <div class="alert-action">
+                                <label>
+                                    <input id="chkAlertas" type="checkbox" value="selected" class="toggle-input alertas" />
+                                    <div class="icon">
+                                        <i class="fa fa-bell" style="font-size: 19px; margin-top: 4px;" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="http://apycom.com/">_</a>
+        </div>
+
+        <div id="screen-updating">
+            <h5>Procesando...</h5>
+        </div>
+    </form>
+</body>
+</html>

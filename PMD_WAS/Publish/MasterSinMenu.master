@@ -1,0 +1,36 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Inherits="PMD_WAS.MasterSinMenu" Codebehind="MasterSinMenu.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/logo.png" Style="height: 110px; display: inline-block; margin: 15px; position: absolute;" />
+                    <h1 style="font-weight: 700; margin: 0px; padding: 44px 0px 0px 180px; color: #f9f9f9; border: none; line-height: 2em; font-size: 2em; position: absolute;">Planeación financiera</h1>
+                </div>
+                <div class="loginDisplay">
+                    <br />
+                </div>
+                <div class="clear hideSkiplink">
+                    <br />
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </form>
+</body>
+</html>

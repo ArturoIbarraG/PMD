@@ -1,0 +1,27 @@
+	DECLARE		@tipoCliente INT = -1,
+				@idCliente	INT = -1,
+				@fechaIni	DATETIME = '20201201',
+				@fechaFin	DATETIME = '20201231'
+
+	
+	SELECT		*
+	FROM		(
+					SELECT		tc.numCliente numCliente, 
+								tc.empresa empresa, 
+								tc.dateCrtd creacion, 
+								MIN(dbo.fn_ObtieneFechaRecepcionPlanta(ts.id)) primerServicio, 
+								up.uprNombres nombre, 
+								up.uprApellidos apellidos
+					from		tblClientes tc (nolock)
+					INNER JOIN	tblServicio ts (nolock) on tc.idUsuario = ts.idCliente
+					INNER JOIN	tblClientesVendedor v (nolock) on tc.id = v.idCliente
+					INNER JOIN	AspNetUsers u (nolock) on v.idVendedor = u.Id
+					INNER JOIN	tblUsersProfiles up (nolock) on v.idVendedor = up.useridOwner
+					WHERE		ts.activo = 1 
+					AND			tc.activo = 1 
+					AND			ts.estatus = 5
+					GROUP BY	ts.idCliente, tc.empresa, tc.dateCrtd, tc.numCliente, up.uprNombres, up.uprApellidos
+				) A
+	WHERE		primerServicio BETWEEN @fechaIni AND @fechaFin
+
+	

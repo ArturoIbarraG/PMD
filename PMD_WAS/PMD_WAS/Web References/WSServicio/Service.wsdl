@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConEmpl_Accesos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomina" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConEmpl_AccesosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConEmpl_AccesosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConEmpl_Nomina">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomina" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConEmpl_NominaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConEmpl_NominaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsXPuestos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clave_secr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave_Depe" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsXPuestosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsXPuestosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaSecretariasDependencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passw" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaSecretariasDependenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaSecretariasDependenciaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaEmpleados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clave_secr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave_Depe" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaEmpleadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaEmpleadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ctr_Edificios">
+        <s:complexType />
+      </s:element>
+      <s:element name="Ctr_EdificiosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ctr_EdificiosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ctr_AltaEdificios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NombrEdif" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ctr_AltaEdificiosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ctr_AltaEdificiosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Nomina" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaUsuarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Checada_Registro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaX" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="Empleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Checada_RegistroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Checada_RegistroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Checada_Captura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Checada_CapturaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Checada_Ultima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Empleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Checada_UltimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Checada_UltimaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CveEdif">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Edificio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CveEdifResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CveEdifResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Bitacora_empl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edificio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Empleado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Bitacora_emplResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Bitacora_emplResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaValida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Empleado" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaValidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FechaValidaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaVehiculos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Passw" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave_secr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave_depe" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaVehiculosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaVehiculosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConEmpl_AccesosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConEmpl_Accesos" />
+  </wsdl:message>
+  <wsdl:message name="ConEmpl_AccesosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConEmpl_AccesosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConEmpl_NominaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConEmpl_Nomina" />
+  </wsdl:message>
+  <wsdl:message name="ConEmpl_NominaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConEmpl_NominaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsXPuestosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsXPuestos" />
+  </wsdl:message>
+  <wsdl:message name="ConsXPuestosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsXPuestosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaSecretariasDependenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaSecretariasDependencia" />
+  </wsdl:message>
+  <wsdl:message name="ListaSecretariasDependenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaSecretariasDependenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaEmpleadosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaEmpleados" />
+  </wsdl:message>
+  <wsdl:message name="ListaEmpleadosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaEmpleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ctr_EdificiosSoapIn">
+    <wsdl:part name="parameters" element="tns:Ctr_Edificios" />
+  </wsdl:message>
+  <wsdl:message name="Ctr_EdificiosSoapOut">
+    <wsdl:part name="parameters" element="tns:Ctr_EdificiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ctr_AltaEdificiosSoapIn">
+    <wsdl:part name="parameters" element="tns:Ctr_AltaEdificios" />
+  </wsdl:message>
+  <wsdl:message name="Ctr_AltaEdificiosSoapOut">
+    <wsdl:part name="parameters" element="tns:Ctr_AltaEdificiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Checada_RegistroSoapIn">
+    <wsdl:part name="parameters" element="tns:Checada_Registro" />
+  </wsdl:message>
+  <wsdl:message name="Checada_RegistroSoapOut">
+    <wsdl:part name="parameters" element="tns:Checada_RegistroResponse" />
+  </wsdl:message>
+  <wsdl:message name="Checada_CapturaSoapIn">
+    <wsdl:part name="parameters" element="tns:Checada_Captura" />
+  </wsdl:message>
+  <wsdl:message name="Checada_CapturaSoapOut">
+    <wsdl:part name="parameters" element="tns:Checada_CapturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Checada_UltimaSoapIn">
+    <wsdl:part name="parameters" element="tns:Checada_Ultima" />
+  </wsdl:message>
+  <wsdl:message name="Checada_UltimaSoapOut">
+    <wsdl:part name="parameters" element="tns:Checada_UltimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CveEdifSoapIn">
+    <wsdl:part name="parameters" element="tns:CveEdif" />
+  </wsdl:message>
+  <wsdl:message name="CveEdifSoapOut">
+    <wsdl:part name="parameters" element="tns:CveEdifResponse" />
+  </wsdl:message>
+  <wsdl:message name="Bitacora_emplSoapIn">
+    <wsdl:part name="parameters" element="tns:Bitacora_empl" />
+  </wsdl:message>
+  <wsdl:message name="Bitacora_emplSoapOut">
+    <wsdl:part name="parameters" element="tns:Bitacora_emplResponse" />
+  </wsdl:message>
+  <wsdl:message name="FechaValidaSoapIn">
+    <wsdl:part name="parameters" element="tns:FechaValida" />
+  </wsdl:message>
+  <wsdl:message name="FechaValidaSoapOut">
+    <wsdl:part name="parameters" element="tns:FechaValidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaVehiculosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaVehiculos" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaVehiculosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaVehiculosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Accesos">
+      <wsdl:input message="tns:ConEmpl_AccesosSoapIn" />
+      <wsdl:output message="tns:ConEmpl_AccesosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Nomina">
+      <wsdl:input message="tns:ConEmpl_NominaSoapIn" />
+      <wsdl:output message="tns:ConEmpl_NominaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsXPuestos">
+      <wsdl:input message="tns:ConsXPuestosSoapIn" />
+      <wsdl:output message="tns:ConsXPuestosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaSecretariasDependencia">
+      <wsdl:input message="tns:ListaSecretariasDependenciaSoapIn" />
+      <wsdl:output message="tns:ListaSecretariasDependenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaEmpleados">
+      <wsdl:input message="tns:ListaEmpleadosSoapIn" />
+      <wsdl:output message="tns:ListaEmpleadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_Edificios">
+      <wsdl:input message="tns:Ctr_EdificiosSoapIn" />
+      <wsdl:output message="tns:Ctr_EdificiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_AltaEdificios">
+      <wsdl:input message="tns:Ctr_AltaEdificiosSoapIn" />
+      <wsdl:output message="tns:Ctr_AltaEdificiosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaUsuario">
+      <wsdl:input message="tns:ValidaUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Registro">
+      <wsdl:input message="tns:Checada_RegistroSoapIn" />
+      <wsdl:output message="tns:Checada_RegistroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Captura">
+      <wsdl:input message="tns:Checada_CapturaSoapIn" />
+      <wsdl:output message="tns:Checada_CapturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Ultima">
+      <wsdl:input message="tns:Checada_UltimaSoapIn" />
+      <wsdl:output message="tns:Checada_UltimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CveEdif">
+      <wsdl:input message="tns:CveEdifSoapIn" />
+      <wsdl:output message="tns:CveEdifSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Bitacora_empl">
+      <wsdl:input message="tns:Bitacora_emplSoapIn" />
+      <wsdl:output message="tns:Bitacora_emplSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaValida">
+      <wsdl:input message="tns:FechaValidaSoapIn" />
+      <wsdl:output message="tns:FechaValidaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaVehiculos">
+      <wsdl:input message="tns:ConsultaVehiculosSoapIn" />
+      <wsdl:output message="tns:ConsultaVehiculosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Accesos">
+      <soap:operation soapAction="http://tempuri.org/ConEmpl_Accesos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Nomina">
+      <soap:operation soapAction="http://tempuri.org/ConEmpl_Nomina" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsXPuestos">
+      <soap:operation soapAction="http://tempuri.org/ConsXPuestos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaSecretariasDependencia">
+      <soap:operation soapAction="http://tempuri.org/ListaSecretariasDependencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEmpleados">
+      <soap:operation soapAction="http://tempuri.org/ListaEmpleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_Edificios">
+      <soap:operation soapAction="http://tempuri.org/Ctr_Edificios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_AltaEdificios">
+      <soap:operation soapAction="http://tempuri.org/Ctr_AltaEdificios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaUsuario">
+      <soap:operation soapAction="http://tempuri.org/ValidaUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Registro">
+      <soap:operation soapAction="http://tempuri.org/Checada_Registro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Captura">
+      <soap:operation soapAction="http://tempuri.org/Checada_Captura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Ultima">
+      <soap:operation soapAction="http://tempuri.org/Checada_Ultima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CveEdif">
+      <soap:operation soapAction="http://tempuri.org/CveEdif" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bitacora_empl">
+      <soap:operation soapAction="http://tempuri.org/Bitacora_empl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaValida">
+      <soap:operation soapAction="http://tempuri.org/FechaValida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaVehiculos">
+      <soap:operation soapAction="http://tempuri.org/ConsultaVehiculos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Accesos">
+      <soap12:operation soapAction="http://tempuri.org/ConEmpl_Accesos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConEmpl_Nomina">
+      <soap12:operation soapAction="http://tempuri.org/ConEmpl_Nomina" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsXPuestos">
+      <soap12:operation soapAction="http://tempuri.org/ConsXPuestos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaSecretariasDependencia">
+      <soap12:operation soapAction="http://tempuri.org/ListaSecretariasDependencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEmpleados">
+      <soap12:operation soapAction="http://tempuri.org/ListaEmpleados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_Edificios">
+      <soap12:operation soapAction="http://tempuri.org/Ctr_Edificios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ctr_AltaEdificios">
+      <soap12:operation soapAction="http://tempuri.org/Ctr_AltaEdificios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ValidaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Registro">
+      <soap12:operation soapAction="http://tempuri.org/Checada_Registro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Captura">
+      <soap12:operation soapAction="http://tempuri.org/Checada_Captura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Checada_Ultima">
+      <soap12:operation soapAction="http://tempuri.org/Checada_Ultima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CveEdif">
+      <soap12:operation soapAction="http://tempuri.org/CveEdif" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bitacora_empl">
+      <soap12:operation soapAction="http://tempuri.org/Bitacora_empl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaValida">
+      <soap12:operation soapAction="http://tempuri.org/FechaValida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaVehiculos">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaVehiculos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://eventos.sanicolas.gob.mx/WSchecadasx/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://eventos.sanicolas.gob.mx/WSchecadasx/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

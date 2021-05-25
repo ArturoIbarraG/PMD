@@ -1,0 +1,761 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Inherits="PMD_WAS.Site" Codebehind="Site.Master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>PMD</title>
+    <script src="/Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <%--CSS Y SCRIPS PARA EL MENU--%>
+    <link type="text/css" href="/Menuapy/menu.css" rel="stylesheet" />
+    <script type="text/javascript" src="/MenuApy/jquery.js"></script>
+    <script type="text/javascript" src="/MenuApy/menu.js"></script>
+    <style type="text/css">
+        a.collapse-action h4 {
+            font-size: 15px;
+            text-transform: none;
+        }
+
+        a.collapse-action > h4 > * {
+            display: inline-block;
+        }
+
+        a.collapse-action.collapsed *.collapse {
+            display: inline-block;
+        }
+
+        a.collapse-action.collapsed *.normal {
+            display: none;
+        }
+
+        a.collapse-action:not(.collapsed) *.collapse {
+            display: none;
+        }
+
+        a.collapse-action:not(.collapsed) *.normal {
+            display: inline-block;
+        }
+
+        .campo_obligatorio.error {
+            border-color: #E57373;
+            background-color: #EF9A9A;
+            color: #B71C1C;
+        }
+
+        .btn-xs {
+            font-size: 12px;
+            padding: 2px;
+        }
+
+        #screen-updating {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            display: none;
+            z-index: 9999;
+        }
+
+            #screen-updating h5 {
+                color: #FFF;
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin: 0px auto;
+                top: 40%;
+                position: absolute;
+                left: 45%;
+                font-weight: 600;
+            }
+
+        #notificationInbox .icon {
+            color: #FFF;
+            font-size: 18px;
+            top: 2px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+
+
+        #divAlertas {
+            right: 0px !important;
+            width: auto !important;
+        }
+
+            #divAlertas .toggle-content {
+                position: absolute;
+                top: 41px;
+                background-color: #FFF;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                color: #444444;
+                width: 380px;
+                box-shadow: 0px 5px 9px 0px #888;
+                margin-left: -25px;
+                max-height: 400px;
+                overflow-y: auto;
+                right: -10px;
+                z-index: 100;
+            }
+
+                #divAlertas .toggle-content .header {
+                    font-size: 16px;
+                    padding: 10px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    background-color: #FFF;
+                    color: #333;
+                    border-bottom: 1px solid #DDD;
+                    text-transform: uppercase;
+                    height: auto;
+                    text-align: center;
+                }
+
+                #divAlertas .toggle-content .empty {
+                    padding: 6px;
+                    font-weight: 100;
+                    background-color: #f9f9fa;
+                    color: #c0cadd;
+                }
+
+                #divAlertas .toggle-content div:not(.header):not(.empty):not(.mensaje) {
+                    display: block;
+                    position: relative;
+                    padding: 10px 6px;
+                    border-bottom: 1px solid #EEE;
+                    padding-bottom: 16px;
+                }
+
+                    #divAlertas .toggle-content div:not(.header):not(.empty):not(.mensaje):hover {
+                        background-color: rgba(240, 240, 240, 0.58);
+                        cursor: pointer;
+                    }
+
+                #divAlertas .toggle-content img.icon {
+                    float: left;
+                    padding: 0px;
+                    margin: 8px 12px 0 0;
+                    width: 34px;
+                    border: 1px solid #CCC;
+                    border-radius: 40px;
+                    height: 34px;
+                }
+
+                #divAlertas .toggle-content span.nombre {
+                    display: block;
+                    margin: 0px;
+                    padding: 0px;
+                    text-align: left;
+                    font-size: 11px;
+                    font-weight: 600;
+                    color: #222222;
+                    line-height: 12px;
+                }
+
+                #divAlertas .toggle-content span.mensaje {
+                    display: block;
+                    text-align: left;
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 11px;
+                    color: #777;
+                    font-weight: 100;
+                    line-height: 12px;
+                    margin-top: 6px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 80%;
+                }
+
+                #divAlertas .toggle-content .fecha {
+                    position: relative;
+                    font-size: 12px;
+                    text-align: right;
+                    width: 100%;
+                    display: block;
+                    line-height: 10px;
+                    right: 6px;
+                }
+
+                #divAlertas .toggle-content .empty i {
+                    display: block;
+                    font-size: 36px;
+                }
+
+                #divAlertas .toggle-content .empty span {
+                    font-size: 12px;
+                    font-weight: 600;
+                    display: block;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+
+                #divAlertas .toggle-content span.opcion {
+                    font-size: 15px;
+                    color: #3498db;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    line-height: 11px;
+                    display: inline;
+                }
+
+                #divAlertas .toggle-content div.mensaje {
+                    font-size: 15px;
+                    padding: 0px;
+                    margin: 0px;
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    line-height: 18px;
+                    color: #777;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+                #divAlertas .toggle-content a {
+                    display: block;
+                    padding: 6px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-weight: 100;
+                    color: #555;
+                    border-bottom: 1px solid #EEEEEE;
+                    position: relative;
+                }
+
+                    #divAlertas .toggle-content a:hover {
+                        background-color: rgba(240, 240, 240, 0.58);
+                        cursor: pointer;
+                    }
+
+                #divAlertas .toggle-content b {
+                    color: #3498db;
+                }
+
+            #divAlertas .toggle-input {
+                position: absolute;
+                clip: rect(0 0 0 0);
+            }
+
+            #divAlertas svg {
+                margin: 0px auto;
+                display: block;
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+        .toggle-input:not(checked) ~ .toggle-content {
+            display: none;
+        }
+
+        .toggle-input:checked ~ .toggle-content {
+            display: block !important;
+        }
+
+        .toggle-input:checked + div.icon::after {
+            content: '';
+            border-left: 12px solid transparent;
+            border-top: 0;
+            border-right: 12px solid transparent;
+            width: 0;
+            top: 30px;
+            position: absolute;
+            height: 0;
+            border-bottom: 12px solid #FFF;
+            margin-left: -5px;
+        }
+
+        #divAlertas > div[data-count]::after {
+            content: attr(data-count);
+            position: relative;
+            font-size: 11px;
+            background-color: #d2322d;
+            color: #FFF;
+            border-radius: 10px;
+            width: 20px;
+            height: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: center;
+            top: -10px;
+            left: 14px;
+            display: inline-block;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function ProcExitoso1() {
+            alert("Se Ha Guardado Exitosamente")
+
+        }
+
+        function validaNumeros(obj, e) {
+            var key = e.keyCode ? e.keyCode : e.which;
+            if ((key > 47 && key < 58) || key == 190 || key == 8 || key == 9 || (key > 36 && key < 41) || key == 46)
+                return true;
+
+            e.preventDefault();
+            return false;
+        }
+
+        function validaCampos(obj, e) {
+            try {
+                var lnk = $(obj);
+                var parent = $(lnk.data('target'));
+                var correcto = true;
+                parent.find('.campo_obligatorio.error').removeClass('error');
+
+                if (lnk.attr('class').indexOf('sub') > -1) {
+                    parent.find('.campo_obligatorio.sub').each(function () {
+                        var obj = $(this);
+                        if (obj.is('input')) {
+                            if (obj.val() == '') {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+                        else if (obj.is('select')) {
+                            if (obj.find('option:selected').val() < 0) {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+                        else if (obj.is('textarea')) {
+                            if (obj.val() == '') {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+
+                    });
+
+                }
+                else {
+                    parent.find('.campo_obligatorio:not(.sub)').each(function () {
+
+                        var obj = $(this);
+                        if (obj.is('input')) {
+                            if (obj.val() == '') {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+                        else if (obj.is('select')) {
+                            if (obj.find('option:selected').val() < 0) {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+                        else if (obj.is('textarea')) {
+                            if (obj.val() == '') {
+                                correcto = false;
+                                obj.addClass('error');
+                            }
+                        }
+                        else if (obj.is('table')) {
+                            var txt = obj.find('input:first');
+                            if (txt.val() == '') {
+                                correcto = false;
+                                txt.addClass('error');
+                            }
+                        }
+                    });
+                }
+
+                if (!correcto) {
+                    if ($('.apfm-container.apfm-open').length > 0) {
+
+                        $('.apfm-container.apfm-open').scrollTop($('.campo_obligatorio.error').first().offset().top);
+                    }
+                    else {
+                        //  alert('2');
+                        $(window).scrollTop($('.campo_obligatorio.error').first().offset().top);
+                    }
+
+                    e.stopPropagation();
+                    e.preventDefault();
+                    return false;
+                }
+            }
+            catch (x) {
+                console.log(x);
+            }
+        }
+    </script>
+
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <%--  PruebaSexyAlert
+    <script src="Sexyalert/mootools.js" type="text/javascript"></script>--%>
+    <link href="/Sexyalert/sexyalertbox.css" rel="stylesheet" type="text/css" />
+    <%--<script src="Sexyalert/sexyalertbox.packed.js" type="text/javascript"></script>
+    <script src="/Sexyalert/sexyalertbox.v1.1.js" type="text/javascript"></script>--%>
+    <script type="text/javascript" language="javascript" id="sexyalert">
+        function infor() {
+            alert("Ha entrado");
+            Sexy.info('<br/><p> Gracias!!  <br/> Tu Opinión es Muy Importante </p>');
+        }
+        function error() {
+            alert("Ha entrado");
+            Sexy.info('<p>No hay ninguna secretaría asignada para este filtro</p>');
+        }
+        function MensajeRedireccionar() {
+            var myTextField = document.getElementById("TextBox3").value;
+            if (confirm("Quieres Continuar?") == true) {
+                location.href = 'Consulta.aspx';
+                //window.open('Consulta.aspx', '_self ');
+            }
+        }
+
+    </script>
+
+
+    <%--Script para Redonde de decimales en todos los textbox --%>
+    <script type="text/javascript">
+        function redondeo2decimales(numero) {
+            var original = parseFloat(numero);
+            var result = Math.round(original * 100) / 100;
+            return result;
+        }
+    </script>
+    <script type="text/javascript">
+        function solonumeros(e) {
+
+            var key;
+
+            if (window.event) // IE
+            {
+                key = e.keyCode;
+            }
+            else if (e.which) // Netscape/Firefox/Opera
+            {
+                key = e.which;
+            }
+
+            if (key == 8) { // BACKSPACE para Firefox
+                return true;
+            }
+            else if (key < 46 || key > 57) {
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" autocomplete="off">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>Planeación financiera
+                    </h1>
+                </div>
+                <div class="loginDisplay">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            [ <a href="~/Password.aspx" id="HeadLoginStatus" runat="server">Cerrar Sesión</a> ]
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            Welcome <span class="bold">
+                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                            </span>!
+                        [ <a href="~/Password.aspx" id="A1" runat="server">Cerrar Sesión</a> ]
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+                <div id="menu">
+                    <ul class="menu">
+
+                        <li><a href="/Bienvenido.aspx"><span>INICIO</span></a>
+                        </li>
+                        <%If Session("seguridad") = 1 Or Session("seguridad") = 3 Then%>
+                        <li><a href="#" class="parent"><span>ADMINISTRADOR</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="/Administrador.aspx" <%--class="parent"--%>><span>Cierres</span></a></li>
+                                    <li><a href="/AltaDeAdministradores.aspx"><span>Alta De Usuarios</span></a></li>
+                                    <li><a href="/AccesosUsuariosSecretaria.aspx"><span>Permisos A Usuarios</span></a></li>
+                                    <li><a href="/ReporteLineasFaltantesDeCaptura.aspx"><span>Líneas Faltantes De Captura</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <%End If%>
+                        <li><a href="PreCaptura.aspx"><span>Captura</span></a></li>
+                        <li><a href="#"><span>Reportes</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="/Transparencia2.aspx"><span>Transparencia</span></a></li>
+                                    <li><a href="/ReporteCumplimiento.aspx"><span>Cumplimiento</span></a></li>
+                                    <li><a href="/ReporteGrafico.aspx"><span>Prueba Grafica</span></a></li>
+                                    <li><a href="/Programa.aspx"><span>Avance Programa</span></a></li>
+                                    <li><a href="/Actividades.aspx"><span>Avance Actividades</span></a></li>
+                                    <li><a href="/Proyectos.aspx"><span>Avance Proyectos</span></a></li>
+                                    <li><a href="/ConsultaSecretaria.aspx"><span>Secretaría</span></a></li>
+                                    <li><a href="/.aspx"><span>Ejes</span></a></li>
+                                    <li><a href="/ReporteSubActividad.aspx"><span>Concentrado Presupuesto</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <%If Session("seguridad") = 3 Then%>
+                        <li><a href="Costeo.aspx"><span>Costeo</span></a>
+                        </li>
+                        <li><a href="/ReporteCosteo.aspx"><span>Reporte Costeo</span></a>
+                        </li>
+                        <%End If%>
+                        <li><a href="#"><span>Programa Operativo Anual</span></a>
+                            <div>
+                                <ul>
+                                    <li><a href="/AsignarRecursosMetas.aspx"><span>Asignar recursos y metas</span></a> </li>
+                                    <li><a href="/AsignacionRecursos.aspx"><span>Asignar Recursos Humanos</span></a> </li>
+                                    <li><a href="AsignarVehiculos.aspx"><span>Asignar Vehículos </span></a></li>
+                                    <li><a href="/AutorizacionLineas.aspx"><span>Autorizacion</span></a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><span>Eventos</span></a>
+                            <div>
+                                <ul>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 3 Then%>
+                                    <li><a href="/Eventos2015/Alta.aspx"><span>Alta</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 3 Then%>
+                                    <li><a href="/Eventos2015/Cambios.aspx"><span>Cambios</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 6 Then%>
+                                    <li><a href="/Eventos2015/Validacion.aspx"><span>Valida evento</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 4 Then%>
+                                    <li><a href="/Eventos2015/Requerimientos.aspx"><span>Requerimiento</span></a></li>
+                                    <% End If%>
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 5 Then%>
+                                    <li><a href="/Eventos2015/Ficha.aspx"><span>Ficha</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 7 Then%>
+                                    <li><a href="/Eventos2015/ConsultaEstatus.aspx"><span>Consulta estatus</span></a></li>
+                                    <% End If%>
+
+                                    <% If Session("seguridad") = 1 Or Session("seguridad") = 2 Or Session("seguridad") = 7 Then%>
+                                    <li><a href="/Eventos2015/Consulta.aspx"><span>Consulta mapa</span></a></li>
+                                    <% End If%>
+
+                                    <li><a href="/Eventos2015/Evidencias.aspx"><span>Evidencias</span></a></li>
+                                    <li><a href="/Eventos/listado/Eventos.aspx"><span>Listado</span></a></li>
+                                    <li><a href="/EventoPresupuesto.aspx"><span>Presupuesto</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <br />
+            <br />
+            <div style="position: absolute; top: 75px; left: 823px; height: 43px; width: 400px; color: white; margin-top: -2%;">
+                <asp:Label ID="Label5" runat="server" Text="Bienvenido(a):"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                <div id="notificationInbox" style="display: inline-block; margin-left: 20%;">
+                    <div id="divAlertas">
+                        <div class="alert-action">
+                            <label>
+                                <input id="chkAlertas" type="checkbox" value="selected" class="toggle-input alertas" />
+                                <div class="icon">
+                                    <i class="fa fa-bell" style="font-size: 19px; margin-top: 4px;" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="http://apycom.com/">_</a>
+        </div>
+
+        <div id="screen-updating">
+            <h5>Procesando...</h5>
+        </div>
+
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginReq);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endReq);
+
+            function beginReq(sender, args) {
+                try {
+                    $('#screen-updating').show();
+                }
+                catch{ }
+            }
+
+            function endReq(sender, args) {
+                try {
+                    $('#screen-updating').hide();
+                }
+                catch (x) { console.log(x); }
+
+            }
+
+            (function ($) {
+                function timerAlertas() {
+                    setTimeout(function () {
+                        cargaAlertas();
+                        timerAlertas();
+                    }, 60000);
+                }
+                cargaAlertas();
+                timerAlertas();
+
+                cargaAlertas();
+            })(jQuery);
+
+
+
+            // request permission on page load
+            document.addEventListener('DOMContentLoaded', function () {
+                if (!Notification) {
+                    alert('Desktop notifications not available in your browser. Try Chromium.');
+                    return;
+                }
+
+                if (Notification.permission !== 'granted') {
+                    Notification.requestPermission(function () {
+                        setTimeout(function () {
+                            //notifyMe('test','');
+                        }, 500);
+                    });
+                }
+            });
+
+            function notifyMe(titulo, mensaje, url) {
+                if (Notification.permission !== 'granted')
+                    Notification.requestPermission();
+                else {
+                    var notification = new Notification(titulo, {
+                        icon: '/Images/san_nicolas.png',
+                        body: mensaje,
+                    });
+                    notification.onclick = function () {
+                        window.focus();
+                    };
+
+                }
+            }
+
+            var window_focus = true;
+
+            window.onblur = function () { console.log('false'); window_focus = false; }
+            window.onfocus = function () { console.log('true'); window_focus = true; }
+
+            function cargaAlertas() {
+                try {
+                    var urlAlertas = '<%= ResolveClientUrl("~/WSEventos.asmx/ObtieneMensajes") %>';
+                    var empleado = '<%= Session("Clave_empl") %>';
+                    var params = '{clave_empl:' + empleado + '}'
+                    var countSinLeer = 0;
+                    var mensaje = '';
+                    var url = '';
+                    $.ajax({
+                        type: 'POST',
+                        url: urlAlertas,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: 'text',
+                        data: params,
+                        success: function (data) {
+                            try {
+                                var json = JSON.parse(data).d;
+
+                                //Alertas
+                                var alertasParent = $('div.alert-action');
+                                json = JSON.parse(json);
+
+                                if (json != undefined && json.length > 0) {
+
+                                    countSinLeer = 0;
+                                    $('#divAlertas  .toggle-content').remove();
+                                    parentDiv = $('<div class="toggle-content"><div class="header">MIS MENSAJES</div></div>');
+                                    for (i = 0; i < json.length; i++) {
+                                        var alertas = json[i];
+                                        url = alertas.Url;
+                                        countSinLeer++;
+                                        mensaje = alertas.Mensaje;
+                                        var body = $('<a />').attr('href', url);
+                                        body.append($('<span class="fecha">Fecha alerta: ' + alertas.Fecha + '</span>'));
+                                        //body.append($('<span class="opcion">Cliente: ' + alertas.cliente + '</span>'));
+                                        body.append($('<div class="mensaje" />').html('<h5>' + alertas.Mensaje + '</h5>'));
+                                        //body.attr('data-estatus', alertas.estatus);
+                                        parentDiv.append(body);
+                                    }
+                                    alertasParent.find('>label').append(parentDiv);
+                                    if (countSinLeer > 0)
+                                        alertasParent.attr("data-count", countSinLeer);
+                                    else
+                                        alertasParent.attr("data-count", undefined);
+
+                                    //MOSTRAR NOTIFICACIONES
+                                    console.log('FOCUS ACTUAL: ' + window_focus);
+                                    if (window_focus == false) {
+                                        if (countSinLeer == 1) {
+                                            setTimeout(function () {
+                                                notifyMe('Nueva actividad', mensaje, url);
+                                            }, 500);
+
+                                        }
+                                        else if (countSinLeer > 1) {
+                                            notifyMe('Nueva actividad', 'Tienes nuevos mensajes.', url);
+                                        }
+                                    }
+                                }
+                                else {
+                                    alertasParent.attr("data-count", undefined);
+                                    $('#divAlertas  .toggle-content').remove();
+                                    alertasParent.find('>label').append($('<div class="toggle-content"><div class="header">Alertas</div><div class="empty"> <i class="fas fa-inbox"></i> <span>Tu bandeja está vacia</span></div></div>'));
+                                }
+                            }
+                            catch (x) {
+                                console.log(x);
+                            }
+
+                        },
+                        error: function (xhr) {
+                            console.log(xhr);
+                        }
+                    });
+                }
+                catch (x) { }
+            }
+
+            function mensajeCustom(tipo, titulo, texto) {
+                swal({
+                    type: tipo,
+                    title: titulo,
+                    text: texto,
+                    confirmButtonText: 'Aceptar',
+                    html: true
+                });
+            }
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,456 @@
+﻿body {
+}
+
+
+  
+   #divencabezado
+{   
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:80px;
+    width:800px;
+    background-color:White ;
+    text-align:center;
+    }
+      
+    #divprincipal
+{   
+ position:relative;
+    margin:0 auto;
+    top: 50px;
+    height: 700px;
+    width:1000px;
+    background-color:White;
+    border-style:solid;
+    border-color:#084B8A;
+    z-index: 0;
+    }
+      
+      
+  #titulomaster
+    {
+       
+    position:relative;
+    margin:0 auto;
+    top: 0px;
+    height:100px;
+    width:1000px;
+    background-color:White ;
+        
+    }
+
+#divFicha
+{   
+
+    
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    left:0px;
+    height: 450px;
+    width:500px;
+    background-color:white;
+    display:block; 
+    
+
+    }
+    
+    
+    #divFicha2
+{   
+
+    
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    left:500px;
+    height: 450px;
+    width:500px;
+    background-color:white;
+    display:block; 
+    
+
+    }
+
+
+
+  
+    #divGuardar
+  {   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 650px;
+    left:350px;
+    height: 20px;
+    width:30px;
+    background-color:white;
+
+    }
+      
+#divCancelar
+  {   
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+    position:absolute;
+    top: 650px;
+    left:500px;
+    height: 20px;
+    width:30px;
+    background-color:white;
+
+    }
+      
+#divlblfolioFicha
+   {   
+    position:absolute;
+    top: 0px;
+    left:0px;
+    height: 25px;
+    width:96px;
+    background-color:white;
+    text-align:left;
+}   
+
+
+
+#divtxtFolioFicha
+   {   
+    position:absolute;
+    top: 0px;
+    left:100px;
+    height: 25px;
+    width:96px;
+    background-color:white;
+    text-align:left;
+}   
+
+                  
+      
+      #divlblidFicha
+ {   
+     font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:x-small;
+  position:absolute;
+    top: 0px;
+    left:210px;
+    height: 25px;
+    width:270px;
+    background-color:white;
+    text-align:left;
+}      
+
+
+
+#divlblComentarios
+   {   
+  position:absolute;
+    top: 35px;
+    left:0px;
+    height: 39px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+
+#divGridInvitados
+   {   
+       font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:x-small;
+  position:absolute;
+    top: 0px;
+    left:0px;
+    height: 140px;
+    width:100%;
+    background-color:white;
+    text-align:left;
+    overflow: scroll;
+}  
+
+#divlblVestimenta
+   {   
+  position:absolute;
+    top: 140px;
+    left:0px;
+    height: 25px;
+    width:100px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+#divtxtCoemntarios
+   {   
+        
+  position:absolute;
+    top: 35px;
+    left:100px;
+    height: 90px;
+    width:375px;
+    background-color:white;
+    text-align:left;
+}  
+
+#divtxtVestimenta
+   {   
+  position:absolute;
+    top: 140px;
+    left:100px;
+    height: 25px;
+    width:375px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+#divlblPrograma
+   {   
+  position:absolute;
+    top: 110px;
+    left:194px;
+    height: 24px;
+    width:124px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+
+
+#divHrIniFija
+{
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+   color:Blue;
+    position:absolute;
+    top: 135px;
+    left:0px;
+    height: 24px;
+    width:48px;
+    background-color:white;
+    text-align:left;
+    }
+
+
+#divActIniFija
+{
+     font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+      color:Blue;
+    position:absolute;
+    top: 135px;
+    left:100px;
+    height: 24px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+    
+    }
+
+ #divHrArrFija
+ {
+   
+   font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+      color:Blue;
+    position:absolute;
+    top: 155px;
+    left:0px;
+    height: 24px;
+    width:48px;
+    background-color:white;
+    text-align:left;
+     
+     }
+              
+  
+  #divActArrFija
+  {
+      
+    font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+      color:Blue;
+    position:absolute;
+    top: 155px;
+    left:100px;
+    height: 24px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+      
+      
+      
+      }
+
+
+
+#divHrCerrFija
+{
+    
+   font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+      color:Blue;
+    position:absolute;
+    top: 175px;
+    left:0px;
+    height: 24px;
+    width:48px;
+    background-color:white;
+    text-align:left;
+    
+    }
+     
+
+#divActCerrFija
+{
+     font-family: "Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Helvetica Neue",Arial;
+   font-size:small;
+      color:Blue;
+    position:absolute;
+    top: 175px;
+    left:100px;
+    height: 24px;
+    width:200px;
+    background-color:white;
+    text-align:left;
+      
+    
+    }
+
+
+
+
+
+#divlblhrPrograma
+   {   
+  position:absolute;
+    top: 170px;
+    left:0px;
+    height: 18px;
+    width:48px;
+    background-color:white;
+    text-align:left;
+}  
+
+    #divlblActividad
+       {   
+  position:absolute;
+    top: 170px;
+    left:100px;
+    height: 18px;
+    width:48px;
+    background-color:white;
+    text-align:left;
+}  
+
+#divtxthrPrograma
+   {   
+  position:absolute;
+    top: 195px;
+    left:0px;
+    height: 24px;
+    width:72px;
+    background-color:white;
+    text-align:left;
+}  
+
+
+#divtxtActividad
+   {   
+  position:absolute;
+    top: 195px;
+    left:100px;
+    height: 48px;
+    width:350px;
+    background-color:white;
+    text-align:left;
+}  
+
+#divImageAgregar1
+
+   {   
+  position:absolute;
+    top: 215px;
+    left:450px;
+    height: 30px;
+    width:30px;
+    background-color:white;
+    text-align:left;
+}
+
+#divImageAgregar
+
+   {   
+  position:absolute;
+    top: 215px;
+    left:470px;
+    height: 30px;
+    width:30px;
+    background-color:white;
+    text-align:left;
+}
+
+
+
+
+
+#DivGrid
+{   
+   
+    position:absolute;
+    top: 424px;
+    left:180px;
+    height: 190px;
+    width:500px;
+    background-color:white;
+    overflow: scroll;
+    }
+    
+    #DivLista
+{   
+   
+    position:absolute;
+    top: 310px;
+    left:160px;
+    height: 212px;
+    width:616px;
+    background-color:white;
+    overflow: scroll;
+    }
+    
+ 
+    
+#DivConsultar
+   {   
+  position:absolute;
+    top: 280px;
+    left:180px;
+    height: 30px;
+    width:600px;
+    background-color:white;
+    text-align:left;
+}  
+
+#DivDatosGen
+   {   
+  position:absolute;
+    top: 320px;
+    left:784px;
+    height: 203px;
+    width:314px;
+    background-color:white;
+    text-align:left;
+}
+
+
+   #DivImagenes
+{   
+   
+    position:absolute;
+    top: 550px;
+    left:180px;
+    height: 256px;
+    width:261px;
+    background-color:white;
+    overflow: scroll;
+    }
+ 

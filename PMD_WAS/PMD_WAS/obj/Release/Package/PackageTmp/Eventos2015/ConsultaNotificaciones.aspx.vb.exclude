@@ -1,0 +1,5 @@
+﻿
+Partial Class Eventos2015_ConsultaNotificaciones
+    Inherits System.Web.UI.Page
+
+End Class

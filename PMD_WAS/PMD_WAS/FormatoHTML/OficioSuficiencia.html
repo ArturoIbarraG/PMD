@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style type="text/css">
+        h1.header {
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+
+        h4.subheader {
+            margin-top: 2px;
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background: url(https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/background_formato.png) no-repeat;
+            background-position-x: right;
+            font-family: Cambria;
+            background-size: 50%;
+            background-position-y: 42%;
+        }
+
+        p.principal {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    </style>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr>
+                <th style="text-align:left;"> <img src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/logo_formato.png" alt="logo" /></th>
+                <th>
+                    <div style="float:right;">
+                        <h1 class="header">
+                            SECRETARIA DE FINANZAS<br />
+                            Y TESORERÍA MUNICIPAL<br />
+                        </h1>
+                        <h4 class="subheader">
+                            SUBSECRETARÍA DE PLANEACIÓN FINANCIERA
+                        </h4>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" style="text-align:right;">
+                    <br /><br />
+                    <p><b>Fecha: <%FECHA_FORMATO%></b></p>
+                    <p><b>Folio: <%FOLIO_SISTEMA%></b></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding:15px;">
+                    <br /><br />
+                    <p class="principal">
+                        <%NOMBRE_DE_DIRECTOR_SOLICITANTE%>
+                    </p>
+                    <p class="principal">
+                        <%PUESTO_DE_DIRECTOR_SOLICITANTE%>
+                    </p>
+                    <br />
+                    <p>
+                        Gobierno Municipal de San Nicolás de los Garza, N. L.<br />
+                        PRESENTE:<br /><br />
+
+                        Me refiero a la solicitud recibida mediante folio número: <b><%NUMERO_DE_FOLIO_DE_SISTEMA%></b>, de fecha  <b><%FECHA_DE_FOLIO_EN_SISTEMA%></b>.
+                        <br /><br />
+                        Después de verificar que el destino del gasto será para dar cumplimiento a la(s) actividad(es) del Plan Municipal de Desarrollo señaladas en la solicitud mencionada, le informo que se otorga la presente autorización presupuestal, con los siguientes datos.
+                        <br /><br />
+                        Actividad: <b><%ACTIVIDAD%></b><br />
+                        Monto autorizado: <b><%MONTO%> (<%MONTO_LETRA%>).</b><br />
+                        Origen del Recurso: <b><%FUENTE_DE_FINANCIAMIENTO_DE_SISTEMA%></b><br />
+                        Descripción del concepto autorizado: <b><%DESCRIPCION_DEL_FOLIO_EN_SISTEMA%></b><br />
+                        Ejercicio fiscal:<b><%EJERCICIO_FISCAL%></b>
+                        <br />
+                        <br />
+                        La presente autorización presupuestal tiene vigencia para el ejercicio fiscal que se menciona, tal como lo establece la Ley de Disciplina Financiera de las Entidades Federativas y los Municipios, y se deberán ejercer los recursos de acuerdo a los lineamientos establecidos en la Ley General de Contabilidad Gubernamental.
+                    </p>
+                    <br />
+                    <p style="text-align:center;">
+                        <br /><br /><br />
+                        <b>ATENTAMENTE</b>
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                        Juan José Palos Ramos<br />
+                        Subsecretario de Planeación Financiera<br />
+                        Secretaría de Finanzas y Tesorería<br />
+                        Gobierno Municipal de San Nicolás de los Garza, N. L.
+
+                    </p>
+                    <br /><br /><br />
+                    <p>C.c.p: Lic. Olivia Juangorena López, Subsecretaría de Áreas Administrativas.</p>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <img src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/footer_formato.png" alt="footer" width="100%" />
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

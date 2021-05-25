@@ -1,0 +1,41 @@
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll.config
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.pdb
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csprojAssemblyReference.cache
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CoreCompileInputs.cache
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.dll
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.xml
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\bin\Debug\Select.Html.dep
+C:\Users\52811\Documents\Visual Studio 2017\Projects\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll.config
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.pdb
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.xml
+C:\Intellipolis\PMD\IntelipolisEngine\bin\Debug\Select.Html.dep
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csprojAssemblyReference.cache
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CoreCompileInputs.cache
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
+C:\Intellipolis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll.config
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.pdb
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.xml
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\bin\Debug\Select.Html.dep
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csprojAssemblyReference.cache
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CoreCompileInputs.cache
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
+D:\Trabajo\Intelipollis\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll.config
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.pdb
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.xml
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\bin\Debug\Select.Html.dep
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csprojAssemblyReference.cache
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CoreCompileInputs.cache
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb

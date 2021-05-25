@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style type="text/css">
+        .tabla-especificaciones {
+            width:100%;
+        }
+
+            .tabla-especificaciones thead tr th {
+                background-color: #17365D;
+                color: #FFF;
+                padding: 10px;
+            }
+
+            .tabla-especificaciones tbody td {
+                border: 1px solid;
+                padding: 4px;
+                text-align: center;
+            }
+        img.imgLogoHeader {
+            max-height: 100%;
+            min-width: 200px;
+            max-width: 50%;
+        }
+
+        h1.header {
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+
+        h4.subheader {
+            margin-top: 2px;
+            color: #17365D;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            font-family: Cambria;
+            background-size: 50%;
+            background-position-y: 42%;
+        }
+
+        p.principal {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        label {
+            font-weight: 100 !important;
+        }
+
+        th label {
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .tabla-contrato thead tr th {
+            background-color: #17365D;
+            color: #FFF;
+            padding: 10px;
+        }
+
+        h3.footer {
+            border-bottom: 1px solid;
+            display: block;
+            width: 200px;
+            margin: 0px auto;
+            padding: 2px 80px 7px;
+            padding-bottom: 100px;
+        }
+
+        .tabla-contrato tbody td {
+            border: 1px solid;
+            padding: 4px;
+            text-align: center;
+        }
+
+        h3, h4 {
+            margin: 4px;
+        }
+    </style>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <thead>
+            <tr>
+                <th style="text-align:left;" width="50%">
+                    <img class="imgLogoHeader" src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/san_nicolas.png" alt="logo" />
+                </th>
+                <th width="50%" style="text-align:right;">
+                    <h3><%SECRETARIA%></h3>
+                    <h4><%PUESTO%></h4>
+                    <br />
+                    <label><%FECHA%></label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><br /><br /><br /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Lic. Alejandra Rodríguez Guerra.</h3>
+                    <h3>Directora de Adquisiciones.</h3>
+                    <h3>Presente. -</h3>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td colspan="2">
+                    <b>Descripción:</b> <label><%NOMBRE_DESCRIPCION%></label>
+                    <br />
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td colspan="2">
+                    <b>Características y Especificaciones: </b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br />
+                    <%ESPECIFICACIONES%>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td>
+                    <b>Unidad Solicitante:</b> <%UNIDAD_SOLICITANTE%>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td colspan="2">
+                    <%INFORMACION_ESPECIFICA%>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td>
+                    <b>Lugar de Entrega:</b> <%LUGAR_ENTREGA%>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td>
+                    <b>Justificacion:</b> <%JUSTIFICACION%>
+                </td>
+            </tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td>
+                    <b>Comentarios:</b> <%COMENTARIOS%>
+                </td>
+            </tr>
+
+            <tr><td><br /><br /></td></tr>
+            <tr><td><br /><br /></td></tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <h3 class="footer">Atentamente:</h3>
+                    <br />
+                    <b><%NOMBRE%></b><br />
+                    <b><%PUESTO%></b>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <td colspan="2">
+                  <img src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Images/footer_formato.png" width="100%" alt="footer" />
+              </td>
+          </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

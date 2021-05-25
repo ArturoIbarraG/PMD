@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 20.75" name="IntelipolisDB">
+  <DataContextMoniker Name="/IntelipolisDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="11b71305-a595-4ac9-8d8f-d898ee4629ee" isExpanded="false" absoluteBounds="6.75, 0.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/configuraciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2afa8464-8067-42e0-93a0-74f1d5bda808" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b6f52f3-368c-45f0-9fa3-1b7d40217122" isExpanded="false" absoluteBounds="0.75, 7.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/etapas_evento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86ed3ad5-b8a4-411f-b55e-c8ab821d7c89" absoluteBounds="0.76500000000000057, 8.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c07c32a9-ac44-4895-b56e-e78170226151" isExpanded="false" absoluteBounds="0.75, 9.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Tbl_Notificaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="846244c9-cb04-440c-8aca-a0d199086ab7" absoluteBounds="0.76499999999999968, 10.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="963a59d9-b64a-43bb-ae44-65c0867cd4ed" isExpanded="false" absoluteBounds="0.75, 11.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/notificaciones_eventos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="010c7164-c1fe-445d-94fc-7cb9038d1022" absoluteBounds="0.76500000000000057, 12.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21b66cf0-4736-44e7-851f-26510586a151" isExpanded="false" absoluteBounds="3.75, 11.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/reg_ficha" />
+      <nestedChildShapes>
+        <elementListCompartment Id="480ac2fd-9fca-44e0-bad9-07045021cf3e" absoluteBounds="3.7650000000000006, 12.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e002a78a-87e5-40d8-9c59-85939e6f8205" isExpanded="false" absoluteBounds="6.75, 11.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/invitados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f065db00-dda1-4fde-9a93-7d755aad17c3" absoluteBounds="6.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ef657a0-c811-4605-8cf9-ed089a540eb7" isExpanded="false" absoluteBounds="9.75, 11.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/correos_secretarias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95273d50-0460-4080-967a-3114a4184d6a" absoluteBounds="9.765, 12.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eff0dd92-6ed4-4738-871f-efc2ea8025dc" isExpanded="false" absoluteBounds="12.75, 11.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tbl_ClaveGastosOficio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acc90e3b-fc9c-43d6-b858-e6b3245b5059" absoluteBounds="12.765, 12.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c3547d3-2178-498f-97e6-7e73d4950e92" isExpanded="false" absoluteBounds="0.75, 13.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Tbl_SubActividadClaveGastos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc447677-f2d6-4e25-8ac8-cbade7261eaf" absoluteBounds="0.76500000000000057, 14.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc136d30-01d2-4660-9627-24410a218134" isExpanded="false" absoluteBounds="3.75, 13.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/reg_evento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97d8cc6c-d741-41ed-afcb-9c216671c13b" absoluteBounds="3.7650000000000006, 14.21, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="823a5725-ac7b-4b4a-957c-643642985333" absoluteBounds="6.75, 13.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Usuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7eb0b56-e529-4211-bb62-f4d78bdcd070" absoluteBounds="6.7650000000000006, 14.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc45a19a-ab08-4389-ae44-c0aa16906466" absoluteBounds="9.75, 13.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Tbl_Empleados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="260991f3-cbc1-4c1f-94ed-a6b2a7f0ba57" absoluteBounds="9.765, 14.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ea24f40-17d8-43c0-98ee-e136c133742b" absoluteBounds="12.75, 13.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Secretarias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f93ea3b3-354e-435c-970d-f51495aba244" absoluteBounds="12.765, 14.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c06e44a-722b-4bf5-9f67-5073b5b640dc" isExpanded="false" absoluteBounds="14.75, 0.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblBitacoraCorreo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95343ab3-1108-455e-a118-c8abb81048b4" absoluteBounds="14.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01c62be8-a5ff-46c3-8ce6-026e0a0971c5" absoluteBounds="14.75, 7.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Notificaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0b1264b-44fb-45fc-9fd2-3449ea3c96f1" absoluteBounds="14.765, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e26ea79c-d5be-4a36-82b3-14d258fa41b3" isExpanded="false" absoluteBounds="11.5, 9.875, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblOrdenesSurtidoDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca3f0782-9cea-4723-9cb3-508ac49f77ed" absoluteBounds="11.515, 10.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="885be651-8572-4eca-8a19-36a4b4fa9b71" absoluteBounds="0.75, 15.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/cat_contratos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83160d1d-c98f-4973-8cd8-ec16266a874c" absoluteBounds="0.76500000000000057, 16.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c881e36-480c-4c86-a287-3e55517616ad" isExpanded="false" absoluteBounds="8.75, 9.875, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblOrdenesSurtido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2938a5b-a351-45ab-b642-3e0319372fa1" absoluteBounds="8.765, 10.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 10.1); (11.5 : 10.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblOrdenesSurtido/tblOrdenesSurtido_tblOrdenesSurtidoDetalle" />
+      <nodes>
+        <classShapeMoniker Id="1c881e36-480c-4c86-a287-3e55517616ad" />
+        <classShapeMoniker Id="e26ea79c-d5be-4a36-82b3-14d258fa41b3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e6fd133d-384f-459d-9948-8c1797b174ee" absoluteBounds="15.75, 10.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Direcciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d810d0c6-c578-417d-8d8a-e2fb1c66c5db" absoluteBounds="15.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="518951e8-a7e9-494d-bd48-a4417a80b1c6" absoluteBounds="15.75, 13.75, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/cat_ordenservicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b08cce5d-d60c-4ade-9d4d-080c8487aadb" absoluteBounds="15.765, 14.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2a4b2de-3bb1-43ca-9f26-3fb0b8e7bf8e" absoluteBounds="16.75, 2.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/cat_requisiciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a12fa18c-0dc5-4079-bf21-5d5d670b292b" absoluteBounds="16.765, 3.2100000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ad5845c-6976-49e1-89b0-ae366ecb1abb" isExpanded="false" absoluteBounds="17.75, 0.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblPresupuestoDireccionContrato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbca5886-9ad6-4cda-877f-f03e68e029ef" absoluteBounds="17.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5503428-c169-4ca4-9a6a-c13fad9e8817" absoluteBounds="3.75, 17.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblPresupuestoDireccionClaveGasto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbf73984-bcdf-4082-93da-4324eb48deb6" absoluteBounds="3.7650000000000006, 18.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f6d69b4-e480-47e0-a773-9cefa9c55f99" isExpanded="false" absoluteBounds="17.75, 6.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Concentrado_Pmd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3d5b0ab-8496-46d3-85e0-fb720f676d9b" absoluteBounds="17.765, 7.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80d2ef0a-3ebe-4c0a-b53c-51893ed96431" isExpanded="false" absoluteBounds="6.75, 17.75, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Tbl_SubActividad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aef3158c-488a-4c66-acaa-bf992c91ad97" absoluteBounds="6.7650000000000006, 18.21, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfe58b0b-1fb5-430c-9863-48fbd0ab1431" absoluteBounds="14.25, 3.25, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblRequisicionesDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9345ce03-1706-498d-af49-0b4121c3cfe7" absoluteBounds="14.265, 3.7100000000000009, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd153ec1-697e-4de0-a594-40d558d8c9a2" absoluteBounds="11.5, 1.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblSolicitudRequisicionDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a6d4476-82c9-476c-8767-723c1b5420d6" absoluteBounds="11.515, 1.7100000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.5 : 3.90465413411458); (14.25 : 3.90465413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblSolicitudRequisicionDetalle/tblSolicitudRequisicionDetalle_tblRequisicionesDetalle" />
+      <nodes>
+        <classShapeMoniker Id="bd153ec1-697e-4de0-a594-40d558d8c9a2" />
+        <classShapeMoniker Id="bfe58b0b-1fb5-430c-9863-48fbd0ab1431" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3f601d46-1015-4503-9f85-43715f26846f" absoluteBounds="9.75, 17.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblProveedores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bbc3019-ed02-41f0-85e8-7f8e09c3dceb" absoluteBounds="9.765, 18.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75eddff7-aa7c-4c71-ab3d-3b6c7c81e191" absoluteBounds="11.5, 5.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblRequisiciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ab0fc74-f705-4216-8bbe-bf9ad15c106c" absoluteBounds="11.515, 5.8350000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.5 : 6.06330485026042); (14.25 : 6.06330485026042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblRequisiciones/tblRequisiciones_tblRequisicionesDetalle" />
+      <nodes>
+        <classShapeMoniker Id="75eddff7-aa7c-4c71-ab3d-3b6c7c81e191" />
+        <classShapeMoniker Id="bfe58b0b-1fb5-430c-9863-48fbd0ab1431" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3415e1b7-99c2-4840-969a-6c270246799b" absoluteBounds="12.75, 17.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblHistoricoRechazosSolicitudRequisicion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dafbb22c-a58d-4636-a593-242583329d1d" absoluteBounds="12.765, 18.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="729b01c9-0139-4ad4-a345-1a576a178404" absoluteBounds="15.75, 17.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblHistoricoAprobacionOrdenAbastecimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2febbf3-1940-42bd-a340-a7817bcef417" absoluteBounds="15.765, 18.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e6127af-cc89-4397-a600-71146728a802" absoluteBounds="18.75, 8.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblHistoricoRechazoOrdenAbastecimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c590baf7-d760-493f-ac1c-36d6b2fc13bf" absoluteBounds="18.765, 9.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="adcd8f9f-4f45-4bcd-9236-d6d4ad831893" absoluteBounds="6.25, 5.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalleComentarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29fcb504-69db-44f9-810b-5a7aa501507c" absoluteBounds="6.2650000000000006, 6.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ab96c3f-c056-4452-8357-c9218b774091" absoluteBounds="3.5, 1.5, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCatalogoEspecificacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a18c2774-7577-42c2-b357-1f261fb454b9" absoluteBounds="3.5150000000000006, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93cbc204-28bb-4f7e-b14e-086317cbd1ef" absoluteBounds="6.25, 2.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalleEspecificacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd164bb4-6227-4a9b-ab2e-d3ed7e0ba3b4" absoluteBounds="6.2650000000000006, 2.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.50564697265625); (6.25 : 2.50564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCatalogoEspecificacion/tblCatalogoEspecificacion_tblCotizacionDetalleEspecificacion" />
+      <nodes>
+        <classShapeMoniker Id="2ab96c3f-c056-4452-8357-c9218b774091" />
+        <classShapeMoniker Id="93cbc204-28bb-4f7e-b14e-086317cbd1ef" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8f83df0b-bb3d-420f-9efb-623138ad1647" absoluteBounds="6.25, 8.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalleArchivos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e205b4d8-56fe-4812-8303-505c04bdce7a" absoluteBounds="6.2650000000000006, 8.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7fc438d8-d3db-4502-8b0d-419aaaa72756" absoluteBounds="9.25, 7.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/Logs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0eaa970-2274-4ef1-a3e3-ca4e8a518c4a" absoluteBounds="9.265, 7.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e7cea65-df0c-41f3-95c4-658d656b07cc" absoluteBounds="9.125, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCatalogoUnidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c69f8f7-4829-4da4-ba37-372bf9028eb6" absoluteBounds="9.14, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e659f747-c442-47d2-beb5-e638fa0bbda2" isExpanded="false" absoluteBounds="0.75, 3.75, 2, 0.45">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8117cc90-eea3-450a-b7b6-f8b82931f09b" absoluteBounds="0.765, 4.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" isExpanded="false" absoluteBounds="3.5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="828880d7-5dd6-4c46-872b-e9dcc2cf256e" absoluteBounds="3.515, 5.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.325); (6.25 : 5.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalle/tblCotizacionDetalle_tblCotizacionDetalleComentarios" />
+      <nodes>
+        <classShapeMoniker Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" />
+        <classShapeMoniker Id="adcd8f9f-4f45-4bcd-9236-d6d4ad831893" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.875); (6.25 : 4.28049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalle/tblCotizacionDetalle_tblCotizacionDetalleEspecificacion" />
+      <nodes>
+        <classShapeMoniker Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" />
+        <classShapeMoniker Id="93cbc204-28bb-4f7e-b14e-086317cbd1ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.03125 : 5.325); (4.03125 : 9.42390055338542); (6.25 : 9.42390055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalle/tblCotizacionDetalle_tblCotizacionDetalleArchivos" />
+      <nodes>
+        <classShapeMoniker Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" />
+        <classShapeMoniker Id="8f83df0b-bb3d-420f-9efb-623138ad1647" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.2); (3.5 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacion/tblCotizacion_tblCotizacionDetalle" />
+      <nodes>
+        <classShapeMoniker Id="e659f747-c442-47d2-beb5-e638fa0bbda2" />
+        <classShapeMoniker Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="adeac529-dbb2-4029-bfeb-273c950751aa" absoluteBounds="5.375, 6.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/TblAlmacen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcc0a288-8083-4a66-81af-35da2c91c4ce" absoluteBounds="5.39, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eeac22c0-8836-4198-bae0-d249ee403c02" absoluteBounds="4.625, 6.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblUsuariosDireccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f641c3a-3e87-4ca8-bcd9-50498743bd1f" absoluteBounds="4.64, 6.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="283f624e-63aa-433d-9f4c-2d1cd7141600" absoluteBounds="4.625, 4.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblHistoricoEstatusCotizacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13b27b90-ba2e-4fe3-8ddd-f75df10cfc75" absoluteBounds="4.64, 4.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ef344e1-83fb-4f64-98e3-29078564ec50" absoluteBounds="4.625, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblMotivosRechazoSolicitudRequisicion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7330ad91-65a1-4f02-80d5-060007fbca23" absoluteBounds="4.64, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d66de318-1985-4107-9386-04a85fff2b8d" absoluteBounds="7.125, 4.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalleDocumentos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f83a8779-53ad-4f40-bb81-eeb4674c283d" absoluteBounds="7.14, 5.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.0624995 : 4.875); (4.0624995 : 4.457); (7.9374995 : 4.457); (7.9374995 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacionDetalle/tblCotizacionDetalle_tblCotizacionDetalleDocumentos" />
+      <nodes>
+        <classShapeMoniker Id="70b3f4b2-5ec3-4a30-a7ea-b309f44d1576" />
+        <classShapeMoniker Id="d66de318-1985-4107-9386-04a85fff2b8d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b1f3d7c5-134d-4be5-8ae4-f1de00828e28" isExpanded="false" absoluteBounds="1.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblCotizacionDocumentos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c079ba83-f187-4890-9aba-335230390a80" absoluteBounds="1.3899999999999997, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.0625 : 3.75); (2.0625 : 0.95)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblCotizacion/tblCotizacion_tblCotizacionDocumentos" />
+      <nodes>
+        <classShapeMoniker Id="e659f747-c442-47d2-beb5-e638fa0bbda2" />
+        <classShapeMoniker Id="b1f3d7c5-134d-4be5-8ae4-f1de00828e28" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1e38383e-8c03-4001-8bb0-90b1ff6f1b95" absoluteBounds="8.75, 3.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/IntelipolisDBDataContext/tblSolicitudRequisicion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc1b34e3-a758-4be1-a787-74420049fcd7" absoluteBounds="8.765, 3.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 3.84215413411458); (11.5 : 3.84215413411458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblSolicitudRequisicion/tblSolicitudRequisicion_tblSolicitudRequisicionDetalle" />
+      <nodes>
+        <classShapeMoniker Id="1e38383e-8c03-4001-8bb0-90b1ff6f1b95" />
+        <classShapeMoniker Id="bd153ec1-697e-4de0-a594-40d558d8c9a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 5.80850341796875); (11.5 : 5.80850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IntelipolisDBDataContext/tblSolicitudRequisicion/tblSolicitudRequisicion_tblRequisiciones" />
+      <nodes>
+        <classShapeMoniker Id="1e38383e-8c03-4001-8bb0-90b1ff6f1b95" />
+        <classShapeMoniker Id="75eddff7-aa7c-4c71-ab3d-3b6c7c81e191" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

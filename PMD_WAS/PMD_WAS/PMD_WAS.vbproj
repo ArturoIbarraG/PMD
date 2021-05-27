@@ -615,6 +615,7 @@
     <Content Include="LineasAprobadas.aspx" />
     <Content Include="LineasTareas.aspx" />
     <Content Include="MasterPage\MasterNuevaImagen.Master" />
+    <Content Include="ObraPublicaAlta.aspx" />
     <Content Include="Password.aspx" />
     <Content Include="POA\AdministraPOA.aspx" />
     <Content Include="PreCaptura.aspx" />
@@ -1341,6 +1342,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ObraPublicaAlta.aspx.designer.vb">
+      <DependentUpon>ObraPublicaAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObraPublicaAlta.aspx.vb">
+      <DependentUpon>ObraPublicaAlta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Old_App_Code\Class1.vb" />
     <Compile Include="Old_App_Code\conexion.vb" />

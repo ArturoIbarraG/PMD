@@ -615,7 +615,9 @@
     <Content Include="LineasAprobadas.aspx" />
     <Content Include="LineasTareas.aspx" />
     <Content Include="MasterPage\MasterNuevaImagen.Master" />
-    <Content Include="ObraPublicaAlta.aspx" />
+    <Content Include="ObraPublica\ObraPublicaAlta.aspx" />
+    <Content Include="ObraPublica\ObraPublicaAutorizacion.aspx" />
+    <Content Include="ObraPublica\ObraPublicaSeguimiento.aspx" />
     <Content Include="Password.aspx" />
     <Content Include="POA\AdministraPOA.aspx" />
     <Content Include="PreCaptura.aspx" />
@@ -1343,11 +1345,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ObraPublicaAlta.aspx.designer.vb">
+    <Compile Include="ObraPublica\ObraPublicaAlta.aspx.designer.vb">
       <DependentUpon>ObraPublicaAlta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ObraPublicaAlta.aspx.vb">
+    <Compile Include="ObraPublica\ObraPublicaAlta.aspx.vb">
       <DependentUpon>ObraPublicaAlta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ObraPublica\ObraPublicaAutorizacion.aspx.designer.vb">
+      <DependentUpon>ObraPublicaAutorizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObraPublica\ObraPublicaAutorizacion.aspx.vb">
+      <DependentUpon>ObraPublicaAutorizacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ObraPublica\ObraPublicaSeguimiento.aspx.designer.vb">
+      <DependentUpon>ObraPublicaSeguimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObraPublica\ObraPublicaSeguimiento.aspx.vb">
+      <DependentUpon>ObraPublicaSeguimiento.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Old_App_Code\Class1.vb" />

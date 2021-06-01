@@ -15562,6 +15562,24 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PMD_WAS.ObraPublicaAutorizacion._updObraPublicaAutorizacion">
+<summary>
+Control updObraPublicaAutorizacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaSeguimiento._updObraPublicaSeguimiento">
+<summary>
+Control updObraPublicaSeguimiento.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="M:PMD_WAS.DB.ObtieneDatos(System.String,System.Data.SqlClient.SqlParameter[])">
  <summary>
  Regresa la informacion de un sp

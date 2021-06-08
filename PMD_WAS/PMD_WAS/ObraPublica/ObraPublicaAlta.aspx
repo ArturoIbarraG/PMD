@@ -7,7 +7,7 @@
                 <h4 class="title">
                     Alta de Obra Pública
                 </h4>
-                <div class="container-body">
+                <div class="container-body" style="display: none;">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-md-5">
@@ -74,39 +74,69 @@
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Nombre de Obra:</h6>
-                            <input type="text" class="form-control" />
+                            <asp:TextBox ID="txtOPNombre" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-12 col-md-5">
-                            <h6 class="subtitle">Departamento:</h6>
-                            <select class="form-control select-basic-simple">
-                                <option selected disabled>Seleccione el Departamento</option>
-                                <option>DEPARTAMENTO GENERAL</option>
-                            </select>
+                            <h6>Número de Contrato:</h6>
+                            <asp:TextBox ID="txtOPNumContrato" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h6>Contratista:</h6>
+                            <asp:TextBox ID="txtOPContratista" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <h6>Representante:</h6>
+                            <asp:TextBox ID="txtOPRepresentante" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h6>Origen de Fondos:</h6>
+                            <asp:TextBox ID="txtOPOrigenFondos" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <h6>Domicilio del Contratista:</h6>
+                            <asp:TextBox ID="txtOPDomicilioContratista" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Descripción de Obra:</h6>
-                            <textarea rows="2" cols="20" class="form-control"></textarea>
+                            <asp:TextBox ID="txtOPDescripcion" CssClass="form-control" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <h6>Ubicación de la Obra:</h6>
+                            <asp:TextBox ID="txtOPUbicacion" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <h6>Concursante Responsable:</h6>
-                            <select class="form-control select-basic-simple">
-                                <option selected disabled>Seleccione al Concursante</option>
-                                <option>EMPRESA 1</option>
-                                <option>EMPRESA 2</option>
-                            </select>
+                            <h6>Monto Total de la Obra:</h6>
+                            <asp:TextBox ID="txtOPMonto" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <h6>Monto de Anticipo:</h6>
+                            <asp:TextBox ID="txtOPMontoAnticipo" CssClass="form-control" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h6>Fecha de Inicio de la Obra:</h6>
+                            <asp:TextBox ID="txtOPFechaInicio" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-12 col-md-6">
-                            <h6>Responsable de Obra:</h6>
-                            <select class="form-control select-basic-simple">
-                                <option selected disabled>Seleccione al Responsable</option>
-                                <option>VICTOR FLORES</option>
-                                <option>ARTURO IBARRA</option>
-                            </select>
+                            <h6>Fecha de Terminación de la Obra:</h6>
+                            <asp:TextBox ID="txtOPFechaTerminacion" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h6>Fecha de firma del Contrato:</h6>
+                            <asp:TextBox ID="txtOPFechaFirma" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
+                        </div>
+                        
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -115,7 +145,7 @@
                         </div>
                     </div>
                     <hr/>
-                    <input type="submit" style="width: 300px;" class="btn btn-primary float-right mx-auto" value="Aplicar Alta"/>
+                    <input type="submit" style="width: 300px;" class="btn btn-primary float-right mx-auto" value="Procesar"/>
                 </div>
             </div>
         </ContentTemplate>

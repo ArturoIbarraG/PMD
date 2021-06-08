@@ -15562,6 +15562,123 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPNombre">
+<summary>
+Control txtOPNombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPNumContrato">
+<summary>
+Control txtOPNumContrato.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPContratista">
+<summary>
+Control txtOPContratista.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPRepresentante">
+<summary>
+Control txtOPRepresentante.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPOrigenFondos">
+<summary>
+Control txtOPOrigenFondos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPDomicilioContratista">
+<summary>
+Control txtOPDomicilioContratista.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPDescripcion">
+<summary>
+Control txtOPDescripcion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPUbicacion">
+<summary>
+Control txtOPUbicacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPMonto">
+<summary>
+Control txtOPMonto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPMontoAnticipo">
+<summary>
+Control txtOPMontoAnticipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPFechaInicio">
+<summary>
+Control txtOPFechaInicio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPFechaTerminacion">
+<summary>
+Control txtOPFechaTerminacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PMD_WAS.ObraPublicaAlta._txtOPFechaFirma">
+<summary>
+Control txtOPFechaFirma.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PMD_WAS.ObraPublicaAutorizacion._updObraPublicaAutorizacion">
 <summary>
 Control updObraPublicaAutorizacion.

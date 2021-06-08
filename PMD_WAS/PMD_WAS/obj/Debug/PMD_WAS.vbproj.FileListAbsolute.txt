@@ -389,7 +389,6 @@ C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\bin\zh-CHT\Crystal
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\bin\es\System.Web.Optimization.resources.dll
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\bin\Select.Html.dep
-C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.vbprojAssemblyReference.cache
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.Resources.resources
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.vbproj.GenerateResource.cache
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.vbproj.CoreCompileInputs.cache
@@ -397,3 +396,4 @@ C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.dll
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\WebForms_Basic.xml
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.pdb
+C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\PMD_WAS\PMD_WAS\obj\Debug\PMD_WAS.vbproj.AssemblyReference.cache

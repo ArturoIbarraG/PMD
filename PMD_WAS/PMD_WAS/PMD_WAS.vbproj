@@ -644,6 +644,7 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper.min.js.map" />
     <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\ObraPublicaScripts\ObraPublicaScript.js" />
     <Content Include="UserControl\ucAgregaComentarioCotizacion.ascx" />
     <Content Include="UserControl\ucDashboardDireccion.ascx" />
     <Content Include="UserControl\ucDashboardPresupuestos.ascx" />
@@ -1371,6 +1372,7 @@
     <Compile Include="Old_App_Code\DataInfo.vb" />
     <Compile Include="Old_App_Code\DB.vb" />
     <Compile Include="Old_App_Code\Helper.vb" />
+    <Compile Include="Old_App_Code\OPConexion.vb" />
     <Compile Include="Old_App_Code\VariablesGlobales.vb" />
     <Compile Include="Password.aspx.designer.vb">
       <DependentUpon>Password.aspx</DependentUpon>

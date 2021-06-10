@@ -15679,6 +15679,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PMD_WAS.ObraPublicaAlta._btnProcesar">
+<summary>
+Control btnProcesar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PMD_WAS.ObraPublicaAutorizacion._updObraPublicaAutorizacion">
 <summary>
 Control updObraPublicaAutorizacion.

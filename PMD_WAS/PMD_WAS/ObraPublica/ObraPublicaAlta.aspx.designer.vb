@@ -32,33 +32,6 @@ Partial Public Class ObraPublicaAlta
     Protected WithEvents txtOPNombre As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtOPNumContrato.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPNumContrato As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPContratista.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPContratista As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPRepresentante.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPRepresentante As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Control txtOPOrigenFondos.
     '''</summary>
     '''<remarks>
@@ -66,15 +39,6 @@ Partial Public Class ObraPublicaAlta
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtOPOrigenFondos As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPDomicilioContratista.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPDomicilioContratista As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control txtOPDescripcion.
@@ -95,49 +59,13 @@ Partial Public Class ObraPublicaAlta
     Protected WithEvents txtOPUbicacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtOPMonto.
+    '''Control txtOPMontoAsignacion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtOPMonto As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPMontoAnticipo.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPMontoAnticipo As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPFechaInicio.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPFechaInicio As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPFechaTerminacion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPFechaTerminacion As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtOPFechaFirma.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtOPFechaFirma As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtOPMontoAsignacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btnProcesar.

@@ -21,4 +21,13 @@ Partial Public Class ObraPublicaAutorizacion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents updObraPublicaAutorizacion As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''Control gridObrasPublicas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gridObrasPublicas As Global.System.Web.UI.WebControls.GridView
 End Class

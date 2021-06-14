@@ -39,3 +39,13 @@ C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\Inteli
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
 C:\Users\PS\OneDrive\Escritorio\AIG\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll.config
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.dll
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\bin\Debug\IntelipolisEngine.pdb
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\bin\Debug\Select.HtmlToPdf.xml
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\bin\Debug\Select.Html.dep
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.AssemblyReference.cache
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CoreCompileInputs.cache
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.csproj.CopyComplete
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.dll
+D:\Users\Arturo\source\repos\PMD\IntelipolisEngine\obj\Debug\IntelipolisEngine.pdb

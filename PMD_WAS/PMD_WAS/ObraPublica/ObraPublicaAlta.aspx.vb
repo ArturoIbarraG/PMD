@@ -15,22 +15,14 @@ Public Class ObraPublicaAlta
 
                 Dim params() As SqlParameter = New SqlParameter() _
                 {
-                    New SqlParameter("@numcon", txtOPNumContrato.Text),
-                    New SqlParameter("@nombre", txtOPNombre.Text),
-                    New SqlParameter("@contratista", txtOPContratista.Text),
-                    New SqlParameter("@representante", txtOPRepresentante.Text),
-                    New SqlParameter("@orifon", txtOPOrigenFondos.Text),
-                    New SqlParameter("@domcon", txtOPDomicilioContratista.Text),
-                    New SqlParameter("@desc", txtOPDescripcion.Text),
-                    New SqlParameter("@ubi", txtOPUbicacion.Text),
-                    New SqlParameter("@monto", Decimal.Parse(txtOPMonto.Text)),
-                    New SqlParameter("@montoant", Decimal.Parse(txtOPMontoAnticipo.Text)),
-                    New SqlParameter("@fechaini", txtOPFechaInicio.Text),
-                    New SqlParameter("@fechafin", txtOPFechaTerminacion.Text),
-                    New SqlParameter("@fechacon", txtOPFechaFirma.Text)
+                    New SqlParameter("@opnombre", txtOPNombre.Text),
+                    New SqlParameter("@opmontoasig", Decimal.Parse(txtOPMontoAsignacion.Text)),
+                    New SqlParameter("@opdesc", txtOPDescripcion.Text),
+                    New SqlParameter("@opubicacion", txtOPUbicacion.Text),
+                    New SqlParameter("@oporigenfondos", txtOPOrigenFondos.Text)
                 }
 
-                data.EjecutaCommand("NuevaObraPublicaPrueba", params)
+                data.EjecutaCommand("ObraPublicaAlta", params)
 
             End Using
 

@@ -45,45 +45,34 @@
                         </div>
                     </div>
                     <hr />
-                    <h2>Obras Públicas de Enero 2021</h2>
-                    <table class="table table-bordered table-hover">
-                        <tbody>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Departamento</th>
-                                <th>Concursante</th>
-                                <th>Responsable</th>
-                                <th>Estado</th>
-                                <th>Detalles</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Construcción Carretera Ecuador</td>
-                                <td>Construcción de la Carretera Ecuador en el municipio de San Nicolás de los Garza.</td>
-                                <td>DIRECCIÓN GENERAL</td>
-                                <td>EMPRESA 1</td>
-                                <td>Arturo Ibarra</td>
-                                <td>En proceso</td>
-                                <td>
-                                    <button class="btn btn-link">Autorizar/Rechazar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Repavimentado de Universidad</td>
-                                <td>Repavimentación de la Avenida Universidad, a altura de HEB Universidad.</td>
-                                <td>DIRECCIÓN GENERAL</td>
-                                <td>EMPRESA 2</td>
-                                <td>Arturo Ibarra</td>
-                                <td>En proceso</td>
-                                <td>
-                                    <button class="btn btn-link">Autorizar/Rechazar</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <asp:GridView ID="gridObrasPublicas" runat="server" AutoGenerateColumns="false" CssClass="table table-hover table-bordered">
+                                <Columns>
+                                    <asp:BoundField HeaderText="ID" DataField="opID" />
+                                    <asp:BoundField HeaderText="Nombre" DataField="opNombre" />
+                                    <asp:BoundField HeaderText="Descripción" DataField="opDescripcion" />
+                                    <asp:BoundField HeaderText="Ubicación" DataField="opUbicacion" />
+                                    <asp:BoundField HeaderText="Origen de Fondos" DataField="opOrigenFondos" />
+                                    <asp:BoundField HeaderText="Estatus" DataField="opEstatus" />
+                                    <asp:TemplateField>
+                                        <ItemTemplate>
+                                            <asp:Button ID="btnAutorizar" runat="server" CssClass="btn btn-link" Text="Autorizar/Rechazar"/>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+                                <EmptyDataTemplate>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h6>No hay Obras Públicas pendientes de autorización.</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </EmptyDataTemplate>
+                            </asp:GridView>
+                        </div>
+                    </div>
                 </div>
             </div>
         </ContentTemplate>

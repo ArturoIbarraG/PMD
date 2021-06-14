@@ -8,6 +8,9 @@ Public Class conexion
 
     Public con As New Data.SqlClient.SqlConnection
 
+    Public conexionCasa = "Data Source=DESKTOP-HMM88BG\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+    Public conexionOficina = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+
     'EQUIPO1\SQLEXPRESS
 
     Public Function Conectar() As SqlClient.SqlConnection
@@ -19,7 +22,7 @@ Public Class conexion
         'con.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
         'con.ConnectionString = "Data Source=WIN-IR0ZLK22UR6\SQLEXPRESS;Initial Catalog=eventos;User ID=user_intelipolis;Password=intelipolis_2020"
         'con.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        con.ConnectionString = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+        con.ConnectionString = conexionCasa
         con.Open()
         Return con
     End Function
@@ -30,18 +33,15 @@ Public Class conexion
     End Sub
 
 
-
-
-
     Public Shared Function sqlcon(ByVal str As String) As DataTable   ' recibe una variable con el query
-
-
-
 
         Dim Cn1 As SqlConnection  ' se crea un objeto en donde se hara la conexion a la bd
         Dim dr As SqlDataReader = Nothing ' se crea el objeto data reader que sera para leer los registros en la bd
         Dim cmd As SqlCommand ' se crea el objeto command para realizar los comandos
         Dim tabla As DataTable = New DataTable() ' se crea el objeto datatable para vaciar la informacion del query
+
+        Dim conexionCasa = "Data Source=DESKTOP-HMM88BG\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+        Dim conexionOficina = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
 
         Cn1 = New SqlConnection() ' se crea un objeto conexion en donde se pone el servidor, user, pass y bd a la que accesara la aplicacion
         'Cn1.ConnectionString = "DATABASE=pruebas;SERVER=LAU-B6BF32A13EF\SQLEXPRESS;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
@@ -49,7 +49,7 @@ Public Class conexion
         'Cn1.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;" 'Cn1.ConnectionString = "server=WIN-VS5TZOS43BN; uid=user_envio; pwd=mexico78; DATABASE=eventos2" '"DATABASE=eventos;SERVER=EQUIPO1\SQLEXPRESS;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "DATABASE=eventos;SERVER=WIN-VS5TZOS43BN;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        Cn1.ConnectionString = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+        Cn1.ConnectionString = conexionCasa
 
         '----------ORIGINAL
         'Cn1.ConnectionString = "server=TESOSVRX\SISTEMASV; uid=sa; pwd=CL160web; DATABASE=eventos"
@@ -78,12 +78,16 @@ Public Class conexion
         Dim Cn1 As SqlConnection ' se crea un objeto en donde se hara la conexion a la bd
         Dim cmd As SqlCommand ' se crea el objeto command para realizar los comandos
         Cn1 = New SqlConnection() ' se crea un objeto conexion en donde se pone el servidor, user, pass y bd a la que accesara la aplicacion
+
+        Dim conexionCasa = "Data Source=DESKTOP-HMM88BG\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+        Dim conexionOficina = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+
         'Cn1.ConnectionString = "DATABASE=eventos;SERVER=LAU-B6BF32A13EF\SQLEXPRESS;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;" 'Cn1.ConnectionString = "server=WIN-VS5TZOS43BN; uid=user_envio; pwd=mexico78; DATABASE=eventos" '"DATABASE=eventos;SERVER=EQUIPO1\SQLEXPRESS;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "server=TESOSVRX\SISTEMASV; uid=sa; pwd=CL160web; DATABASE=eventos"
         'Cn1.ConnectionString = "server=WIN-VS5TZOS43BN; uid=sa; pwd=CL160web; DATABASE=eventos"
         'Cn1.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        Cn1.ConnectionString = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+        Cn1.ConnectionString = conexionCasa
 
         Dim resultado As Integer    ' se crea una variable en la cual se pondra un valor integer el cual servira para saber si se realizo la accion ' en la cual se hayan afectado registros en la bd
 

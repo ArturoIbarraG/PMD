@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Monto de Asignación Aprobada:</h6>
-                            <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="numberOnly(event);" CssClass="form-control" runat="server" TextMode="Number"></asp:TextBox>
+                            <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="numberOnly(event);" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <hr/>
@@ -82,5 +82,15 @@
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
-    <script src="/Scripts/ObraPublicaScripts/ObraPublicaScript.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function muestraErrorFaltanCampos() {
+            alert("Faltan campos por llenar.");
+        }
+
+        function muestraConfirmaAlta() {
+            alert("Obra Pública creada correctamente.");
+            window.location = 'ObraPublicaAutorizacion.aspx';
+        }
+    </script>
 </asp:Content>

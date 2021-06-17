@@ -113,13 +113,13 @@ Partial Public Class ObraPublicaAutorizacion
     Protected WithEvents ddlOPContratista As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control txtOPTipoAdjudicacion.
+    '''Control ddlOPTipoAdjudicacion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtOPTipoAdjudicacion As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlOPTipoAdjudicacion As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control txtOPNumeroAdjudicacion.
@@ -201,13 +201,4 @@ Partial Public Class ObraPublicaAutorizacion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnAutorizarOP As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control hdnIdActividad.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents hdnIdActividad As Global.System.Web.UI.WebControls.HiddenField
 End Class

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" Title="Seguimiento de Obras Públicas" AutoEventWireup="false" MasterPageFile="~/MasterPage/MasterNuevaImagen.master" CodeBehind="ObraPublicaSeguimiento.aspx.vb" Inherits="PMD_WAS.ObraPublicaSeguimiento" %>
+﻿<%@ Page EnableEventValidation="false" Language="vb" Title="Seguimiento de Obras Públicas" AutoEventWireup="false" MasterPageFile="~/MasterPage/MasterNuevaImagen.master" CodeBehind="ObraPublicaSeguimiento.aspx.vb" Inherits="PMD_WAS.ObraPublicaSeguimiento" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <asp:UpdatePanel ID="updObraPublicaSeguimiento" runat="server">
@@ -45,47 +45,164 @@
                         </div>
                     </div>
                     <hr />
-                    <h2>Obras Públicas de Enero 2021</h2>
-                    <table class="table table-bordered table-hover">
-                        <tbody>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Departamento</th>
-                                <th>Concursante</th>
-                                <th>Responsable</th>
-                                <th>Estado</th>
-                                <th>Detalles</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Construcción Carretera Ecuador</td>
-                                <td>Construcción de la Carretera Ecuador en el municipio de San Nicolás de los Garza.</td>
-                                <td>DIRECCIÓN GENERAL</td>
-                                <td>EMPRESA 1</td>
-                                <td>Arturo Ibarra</td>
-                                <td>En proceso</td>
-                                <td>
-                                    <button class="btn btn-link">Ver Detalles</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Repavimentado de Universidad</td>
-                                <td>Repavimentación de la Avenida Universidad, a altura de HEB Universidad.</td>
-                                <td>DIRECCIÓN GENERAL</td>
-                                <td>EMPRESA 2</td>
-                                <td>Arturo Ibarra</td>
-                                <td>En proceso</td>
-                                <td>
-                                    <button class="btn btn-link">Ver Detalles</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h2>Obras Públicas</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <asp:GridView ID="gridObrasPublicas" runat="server" AutoGenerateColumns="false" CssClass="table table-hover table-bordered">
+                                <Columns>
+                                    <asp:BoundField HeaderText="ID" DataField="opID" />
+                                    <asp:BoundField HeaderText="Nombre" DataField="opNombre" />
+                                    <asp:BoundField HeaderText="Descripción" DataField="opDescripcion" />
+                                    <asp:BoundField HeaderText="Ubicación" DataField="opUbicacion" />
+                                    <asp:BoundField HeaderText="Origen de Fondos" DataField="opOrigenFondos" />
+                                    <asp:BoundField HeaderText="Estatus" DataField="opEstatus" />
+                                    <asp:TemplateField>
+                                        <ItemTemplate>
+                                            <asp:Button ID="btnVerEditar" runat="server" CssClass="btn btn-link" Text="Ver/Editar" OnCommand="btnVerEditar_Command" CommandArgument='<%#Eval("opID")%>'/>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+                                <EmptyDataTemplate>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h6>No hay Obras Públicas.</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </EmptyDataTemplate>
+                            </asp:GridView>
+                        </div>
+                    </div>
                 </div>
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
+
+    <div id="modalEditarOP" class="modal fade modal-medium" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Editar Obra Pública</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <asp:UpdatePanel ID="upEditarOP" runat="server">
+                        <ContentTemplate>
+                            <div class="container-fluid">
+                                <h3>Detalles de la Obra Pública:</h3>
+                                <asp:TextBox ID="txtOPID" Visible="false" runat="server"></asp:TextBox>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Nombre:</h6>
+                                        <asp:TextBox ID="txtOPNombre" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Descripción:</h6>
+                                        <asp:TextBox ID="txtOPDescripcion" runat="server" CssClass="form-control" Rows="2" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Origen de Fondos:</h6>
+                                        <asp:TextBox ID="txtOPOrigenFondos" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Monto de Asignación:</h6>
+                                        <asp:TextBox ID="txtOPMontoAsignacion" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Ubicación:</h6>
+                                        <asp:TextBox ID="txtOPUbicacion" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Número de contrato:</h6>
+                                        <asp:TextBox ID="txtOPNumeroContrato" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Contratista:</h6>
+                                        <asp:DropDownList ID="ddlOPContratista" runat="server" AutoPostBack="true" CssClass="form-control"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Tipo de Adjudicación:</h6>
+                                        <asp:DropDownList ID="ddlOPTipoAdjudicacion" runat="server" CssClass="form-control"></asp:DropDownList>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Número de Adjudicación:</h6>
+                                        <asp:TextBox ID="txtOPNumeroAdjudicacion" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Monto Total:</h6>
+                                        <asp:TextBox ID="txtOPMontoTotal" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6 class="subtitle">Monto de Anticipo:</h6>
+                                        <asp:TextBox ID="txtOPMontoAnticipo" runat="server" CssClass="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6>Fecha de Inicio del Contrato:</h6>
+                                        <asp:TextBox ID="txtOPFechaInicio" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6>Fecha de Terminación del Contrato:</h6>
+                                        <asp:TextBox ID="txtOPFechaTerminacion" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h6>Fecha de Firma del Contrato:</h6>
+                                        <asp:TextBox ID="txtOPFechaFirma" CssClass="form-control" TextMode="Date" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h6>Fechas de Estimaciones:</h6>
+                                        <asp:TextBox ID="txtOPFechaEstimaciones" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <asp:Button ID="btnGuardarCambios" runat="server" CssClass="btn btn-success" Text="Guardar Cambios"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function abreModalOP() {
+            $('#modalEditarOP').modal('show');
+        }
+
+        function ocultaModalOP() {
+            $('#modalEditarOP').modal('hide');
+        }
+
+        function muestraErrorFaltanCampos() {
+            alert("Faltan campos por llenar.");
+        }
+
+        function muestraConfirmaAutorizacion() {
+            alert("Obra Pública aprobada correctamente.");
+            window.location = 'ObraPublicaAutorizacion.aspx';
+        }
+    </script>
+
 </asp:Content>

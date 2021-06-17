@@ -39,7 +39,7 @@ Public Class ObraPublicaAlta
                 ScriptManager.RegisterStartupScript(Me.Page, Me.Page.GetType(), "oculta_modal", String.Format("alert('{0}');", ex.Message), True)
             End Try
 
-            ScriptManager.RegisterStartupScript(Me.Page, Me.Page.GetType(), "oculta_modal", String.Format("alert('{0}');", "Obra Pública creada correctamente."), True)
+            ScriptManager.RegisterStartupScript(updObraPublicaAlta, updObraPublicaAlta.GetType(), "confirmaAlta", "muestraConfirmaAlta();", True)
 
         End If
 

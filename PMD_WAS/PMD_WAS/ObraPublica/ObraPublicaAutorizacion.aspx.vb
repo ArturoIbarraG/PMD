@@ -4,16 +4,17 @@ Public Class ObraPublicaAutorizacion
     Inherits System.Web.UI.Page
 
     Dim con As New OPConexion
+    Dim TiposAdjudicacion() As String = {"CONVOCATORIA PUBLICA"}
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        CargarObrasPublicas()
+        CargarObrasPublicasPendientes()
     End Sub
 
-    Private Sub CargarObrasPublicas()
+    Private Sub CargarObrasPublicasPendientes()
 
         Using data As New DB(con.conectar())
 
-            gridObrasPublicas.DataSource = data.ObtieneDatos("CargarObrasPublicas", Nothing)
+            gridObrasPublicas.DataSource = data.ObtieneDatos("CargarObrasPublicasPendientes", Nothing)
             gridObrasPublicas.DataBind()
 
         End Using
@@ -33,9 +34,16 @@ Public Class ObraPublicaAutorizacion
             txtOPID.Text = dr("opID")
             txtOPNombre.Text = dr("opNombre")
             txtOPDescripcion.Text = dr("opDescripcion")
-            txtOPOrigenFondos.Text = "$" + dr("opOrigenFondos")
-            txtOPMontoAsignacion.Text = dr("opMontoAsignacion")
+            txtOPOrigenFondos.Text = dr("opOrigenFondos")
+            Dim montoAsignacionString = dr("opMontoAsignacion")
+            txtOPMontoAsignacion.Text = "$" + montoAsignacionString.ToString()
             txtOPUbicacion.Text = dr("opUbicacion")
+
+            txtOPMontoTotal.Text = montoAsignacionString
+
+            'Cargar los tipos de adjudicación
+            ddlOPTipoAdjudicacion.DataSource = TiposAdjudicacion
+            ddlOPTipoAdjudicacion.DataBind()
 
         End Using
 
@@ -45,7 +53,7 @@ Public Class ObraPublicaAutorizacion
     Protected Sub btnAutorizarOP_Command(sender As Object, e As CommandEventArgs)
         If txtOPNumeroContrato.Text = "" Or
            ddlOPContratista.Text = "" Or
-           txtOPTipoAdjudicacion.Text = "" Or
+           ddlOPTipoAdjudicacion.Text = "" Or
            txtOPNumeroAdjudicacion.Text = "" Or
            txtOPMontoTotal.Text = "" Or
            txtOPMontoAnticipo.Text = "" Or
@@ -64,7 +72,7 @@ Public Class ObraPublicaAutorizacion
                     New SqlParameter("@opID", txtOPID.Text),
                     New SqlParameter("@numcon", txtOPNumeroContrato.Text),
                     New SqlParameter("@conID", ddlOPContratista.SelectedValue),
-                    New SqlParameter("@tipoAdj", txtOPTipoAdjudicacion.Text),
+                    New SqlParameter("@tipoAdj", ddlOPTipoAdjudicacion.Text),
                     New SqlParameter("@numAdj", txtOPNumeroAdjudicacion.Text),
                     New SqlParameter("@monTot", Decimal.Parse(txtOPMontoTotal.Text)),
                     New SqlParameter("@monAnt", Decimal.Parse(txtOPMontoAnticipo.Text)),
@@ -77,7 +85,7 @@ Public Class ObraPublicaAutorizacion
                 data.EjecutaCommand("AutorizarObraPublica", params)
 
                 ScriptManager.RegisterStartupScript(updObraPublicaAutorizacion, updObraPublicaAutorizacion.GetType(), "confirmaAutorizacion", "muestraConfirmaAutorizacion();", True)
-                Response.Redirect("~/ObraPublica/ObraPublicaAutorizacion.aspx")
+
             End Using
         End If
     End Sub

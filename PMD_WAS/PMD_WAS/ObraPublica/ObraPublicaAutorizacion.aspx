@@ -90,7 +90,7 @@
                         <ContentTemplate>
                             <div class="container-fluid">
                                 <h3>Detalles de la Obra Pública:</h3>
-                                <asp:TextBox ID="txtOPID" Enabled="false" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOPID" Visible="false" Enabled="false" runat="server"></asp:TextBox>
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <h6 class="subtitle">Nombre:</h6>
@@ -132,7 +132,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <h6 class="subtitle">Tipo de Adjudicación:</h6>
-                                        <asp:TextBox ID="txtOPTipoAdjudicacion" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:DropDownList ID="ddlOPTipoAdjudicacion" runat="server" CssClass="form-control"></asp:DropDownList>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <h6 class="subtitle">Número de Adjudicación:</h6>
@@ -182,7 +182,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <asp:HiddenField ID="hdnIdActividad" runat="server" />
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
@@ -205,6 +204,7 @@
 
         function muestraConfirmaAutorizacion() {
             alert("Obra Pública aprobada correctamente.");
+            window.location = 'ObraPublicaAutorizacion.aspx';
         }
     </script>
 

@@ -15643,6 +15643,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PMD_WAS.ObraPublicaAutorizacion._txtOPID">
+<summary>
+Control txtOPID.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PMD_WAS.ObraPublicaAutorizacion._txtOPNombre">
 <summary>
 Control txtOPNombre.
@@ -15697,9 +15706,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PMD_WAS.ObraPublicaAutorizacion._txtOPContratista">
+<member name="F:PMD_WAS.ObraPublicaAutorizacion._ddlOPContratista">
 <summary>
-Control txtOPContratista.
+Control ddlOPContratista.
 </summary>
 <remarks>
 Campo generado automáticamente.

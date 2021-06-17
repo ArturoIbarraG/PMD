@@ -41,6 +41,15 @@ Partial Public Class ObraPublicaAutorizacion
     Protected WithEvents upAutorizarOP As Global.System.Web.UI.UpdatePanel
 
     '''<summary>
+    '''Control txtOPID.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtOPID As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control txtOPNombre.
     '''</summary>
     '''<remarks>
@@ -95,13 +104,13 @@ Partial Public Class ObraPublicaAutorizacion
     Protected WithEvents txtOPNumeroContrato As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtOPContratista.
+    '''Control ddlOPContratista.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtOPContratista As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlOPContratista As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control txtOPTipoAdjudicacion.

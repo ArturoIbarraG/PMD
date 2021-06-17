@@ -90,6 +90,7 @@
                         <ContentTemplate>
                             <div class="container-fluid">
                                 <h3>Detalles de la Obra Pública:</h3>
+                                <asp:TextBox ID="txtOPID" Enabled="false" runat="server"></asp:TextBox>
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <h6 class="subtitle">Nombre:</h6>
@@ -125,7 +126,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <h6 class="subtitle">Contratista:</h6>
-                                        <asp:TextBox ID="txtOPContratista" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:DropDownList ID="ddlOPContratista" runat="server" AutoPostBack="true" CssClass="form-control"></asp:DropDownList>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -177,7 +178,7 @@
                                         <asp:Button ID="btnRechazarOP" runat="server" CssClass="btn btn-danger" Text="Rechazar"/>
                                     </div>
                                     <div class="col-3">
-                                        <asp:Button ID="btnAutorizarOP" runat="server" CssClass="btn btn-success" Text="Autorizar" OnCommand="btnAutorizarOP_Command"/>
+                                        <asp:Button ID="btnAutorizarOP" runat="server" CssClass="btn btn-success" Text="Aprobar" OnCommand="btnAutorizarOP_Command" CommandArgument='<%# Eval("opID") %>' />
                                     </div>
                                 </div>
                             </div>
@@ -196,6 +197,14 @@
 
         function ocultaModalOP() {
             $('#modalAutorizarOP').modal('hide');
+        }
+
+        function muestraErrorFaltanCampos() {
+            alert("Faltan campos por llenar.");
+        }
+
+        function muestraConfirmaAutorizacion() {
+            alert("Obra Pública aprobada correctamente.");
         }
     </script>
 

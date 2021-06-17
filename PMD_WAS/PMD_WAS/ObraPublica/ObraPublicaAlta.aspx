@@ -53,44 +53,31 @@
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Nombre de Obra:</h6>
-                            <asp:TextBox ID="txtOPNombre" CssClass="form-control" runat="server">NombreTemp</asp:TextBox>
+                            <asp:TextBox ID="txtOPNombre" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-12 col-md-5">
                             <h6>Origen de Fondos:</h6>
-                            <asp:TextBox ID="txtOPOrigenFondos" CssClass="form-control" runat="server">Fondos Centralizados</asp:TextBox>
+                            <asp:TextBox ID="txtOPOrigenFondos" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Descripción de Obra:</h6>
-                            <asp:TextBox ID="txtOPDescripcion" CssClass="form-control" runat="server" Rows="2" TextMode="MultiLine">Construcción de Andador</asp:TextBox>
+                            <asp:TextBox ID="txtOPDescripcion" CssClass="form-control" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox>
                         </div>
                         <div class="col-12 col-md-5">
                             <h6>Ubicación de la Obra:</h6>
-                            <asp:TextBox ID="txtOPUbicacion" CssClass="form-control" runat="server">Calle Popocatepetl</asp:TextBox>
+                            <asp:TextBox ID="txtOPUbicacion" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Monto de Asignación Aprobada:</h6>
-                            <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="numberOnly(event);" CssClass="form-control" runat="server" TextMode="Number">5195431.39</asp:TextBox>
+                            <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="numberOnly(event);" CssClass="form-control" runat="server" TextMode="Number"></asp:TextBox>
                         </div>
                     </div>
-                    <%--<div class="row">
-                        <div class="col-12 col-md-6">
-                            <h6>Fecha de firma del Contrato:</h6>
-                            <asp:TextBox ID="txtOPFechaFirma" CssClass="form-control" TextMode="Date" runat="server">2021-06-10</asp:TextBox>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h6>Adjuntar Contrato:</h6>
-                            <input type="file" class="form-control-file"/>
-                        </div>
-                    </div>--%>
                     <hr/>
                     <asp:Button ID="btnProcesar" style="width: 300px;" CssClass="btn btn-primary float-right mx-auto" Text="Procesar" runat="server"/>
-                   <%-- <input type="submit" style="width: 300px;" class="" value="Procesar" id="btnProcesar"/>--%>
                 </div>
             </div>
         </ContentTemplate>

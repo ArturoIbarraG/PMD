@@ -11,7 +11,7 @@ Public Class Class1
 
     Public conexionCasa = "Data Source=DESKTOP-HMM88BG\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
     Public conexionOficina = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
-    Public conexionActual = conexionOficina
+    Public conexionActual = conexionCasa
 
     Public Function conectar() As SqlClient.SqlConnection
         cn1.Close()

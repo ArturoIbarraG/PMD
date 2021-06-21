@@ -36,7 +36,7 @@ Public Class ObraPublicaAutorizacion
             txtOPDescripcion.Text = dr("opDescripcion")
             txtOPOrigenFondos.Text = dr("opOrigenFondos")
             Dim montoAsignacionString = dr("opMontoAsignacion")
-            txtOPMontoAsignacion.Text = "$" + montoAsignacionString.ToString()
+            txtOPMontoAsignacion.Text = montoAsignacionString.ToString()
             txtOPUbicacion.Text = dr("opUbicacion")
 
             txtOPMontoTotal.Text = montoAsignacionString

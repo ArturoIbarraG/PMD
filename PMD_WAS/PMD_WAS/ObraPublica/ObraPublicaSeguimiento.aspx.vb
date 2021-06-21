@@ -22,6 +22,8 @@ Public Class ObraPublicaSeguimiento
 
     Protected Sub btnVerEditar_Command(sender As Object, e As CommandEventArgs)
 
+        limpiarCampos()
+
         Dim id = e.CommandArgument
 
         Using data As New DB(con.conectar())
@@ -82,4 +84,24 @@ Public Class ObraPublicaSeguimiento
             ddlOPContratista.DataBind()
         End Using
     End Sub
+
+    Private Sub limpiarCampos()
+        txtOPID.Text = ""
+        txtOPNombre.Text = ""
+        txtOPDescripcion.Text = ""
+        txtOPOrigenFondos.Text = ""
+        txtOPMontoAsignacion.Text = ""
+        txtOPUbicacion.Text = ""
+        txtOPNumeroContrato.Text = ""
+        'ddlOPContratista.SelectedValue = 0
+        'ddlOPTipoAdjudicacion.SelectedValue = 0
+        txtOPNumeroAdjudicacion.Text = ""
+        txtOPMontoTotal.Text = ""
+        txtOPMontoAnticipo.Text = ""
+        txtOPFechaInicio.Text = ""
+        txtOPFechaTerminacion.Text = ""
+        txtOPFechaFirma.Text = ""
+        txtOPFechaEstimaciones.Text = ""
+    End Sub
+
 End Class

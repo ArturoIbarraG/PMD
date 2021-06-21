@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex .currency{
+    font-size: 14pt;
+}

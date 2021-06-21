@@ -618,6 +618,7 @@
     <Content Include="ObraPublica\ObraPublicaAlta.aspx" />
     <Content Include="ObraPublica\ObraPublicaAutorizacion.aspx" />
     <Content Include="ObraPublica\ObraPublicaSeguimiento.aspx" />
+    <Content Include="ObraPublica\ObraPublicaStyles.css" />
     <Content Include="Password.aspx" />
     <Content Include="POA\AdministraPOA.aspx" />
     <Content Include="PreCaptura.aspx" />

@@ -73,7 +73,12 @@
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <h6>Monto de Asignación Aprobada:</h6>
-                            <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="numberOnly(event);" CssClass="form-control" runat="server"></asp:TextBox>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <asp:TextBox ID="txtOPMontoAsignacion" onkeypress="Javascript: return IsNumber(event);" CssClass="form-control" runat="server"></asp:TextBox>
+                            </div>
                         </div>
                     </div>
                     <hr/>
@@ -83,6 +88,13 @@
         </ContentTemplate>
     </asp:UpdatePanel>
     <script type="text/javascript">
+
+        function IsNumber(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
 
         function muestraErrorFaltanCampos() {
             alert("Faltan campos por llenar.");

@@ -18,6 +18,7 @@
     <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Content/bootstrap-switch.min.css" rel="stylesheet" />
     <link href="/Content/NuevaImagen/Master.css" rel="stylesheet" />
+    <link href="/ObraPublica/ObraPublicaStyles.css" rel="stylesheet" />
     <link href="/Scripts/sweetalert/sweetalert.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -303,6 +304,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <script src="https://admin.sanicolas.gob.mx/PlaneacionFinanciera/Scripts/select2.min.js" type="text/javascript"></script>
         <script src="/Scripts/NuevaImagen/Master.js" type="text/javascript"></script>
+        <script src="/Scripts/ObraPublica/ObraPublicaScript.js" type="text/javascript"></script>
         <script src="/Scripts/jquery.mask.js" type="text/javascript"></script>
         <script src="/Scripts/sweetalert/sweetalert.min.js" type="text/javascript"></script>
     </form>

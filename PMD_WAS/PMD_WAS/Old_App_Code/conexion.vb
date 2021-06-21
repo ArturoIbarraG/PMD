@@ -22,7 +22,7 @@ Public Class conexion
         'con.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
         'con.ConnectionString = "Data Source=WIN-IR0ZLK22UR6\SQLEXPRESS;Initial Catalog=eventos;User ID=user_intelipolis;Password=intelipolis_2020"
         'con.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        con.ConnectionString = conexionOficina
+        con.ConnectionString = conexionCasa
         con.Open()
         Return con
     End Function
@@ -49,7 +49,7 @@ Public Class conexion
         'Cn1.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;" 'Cn1.ConnectionString = "server=WIN-VS5TZOS43BN; uid=user_envio; pwd=mexico78; DATABASE=eventos2" '"DATABASE=eventos;SERVER=EQUIPO1\SQLEXPRESS;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "DATABASE=eventos;SERVER=WIN-VS5TZOS43BN;TRUSTED_CONNECTION=YES;" ' despues se le da la cadena de conexion al objeto creado
         'Cn1.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        Cn1.ConnectionString = conexionOficina
+        Cn1.ConnectionString = conexionCasa
 
         '----------ORIGINAL
         'Cn1.ConnectionString = "server=TESOSVRX\SISTEMASV; uid=sa; pwd=CL160web; DATABASE=eventos"
@@ -87,7 +87,7 @@ Public Class conexion
         'Cn1.ConnectionString = "server=TESOSVRX\SISTEMASV; uid=sa; pwd=CL160web; DATABASE=eventos"
         'Cn1.ConnectionString = "server=WIN-VS5TZOS43BN; uid=sa; pwd=CL160web; DATABASE=eventos"
         'Cn1.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        Cn1.ConnectionString = conexionOficina
+        Cn1.ConnectionString = conexionCasa
 
         Dim resultado As Integer    ' se crea una variable en la cual se pondra un valor integer el cual servira para saber si se realizo la accion ' en la cual se hayan afectado registros en la bd
 

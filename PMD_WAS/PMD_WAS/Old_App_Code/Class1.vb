@@ -11,6 +11,7 @@ Public Class Class1
 
     Public conexionCasa = "Data Source=DESKTOP-HMM88BG\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
     Public conexionOficina = "Data Source=DESKTOP-3J6NM66\SQLEXPRESS;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
+    Public conexionServidor = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
     Public conexionActual = conexionCasa
 
     Public Function conectar() As SqlClient.SqlConnection
@@ -21,7 +22,7 @@ Public Class Class1
         'cn1.ConnectionString = "Data Source=eslavadeveloper.database.windows.net,1433;Initial Catalog=PMD;User ID=eslavaDB;Password=Razus 1589"
         'cn1.ConnectionString = "Data Source=WIN-IR0ZLK22UR6\SQLEXPRESS;Initial Catalog=eventos;User ID=user_intelipolis;Password=intelipolis_2020"
         'cn1.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        cn1.ConnectionString = conexionActual
+        cn1.ConnectionString = conexionServidor
 
         cn1.Open()
         Return cn1
@@ -30,7 +31,7 @@ Public Class Class1
         cn2.Close()
         'cn2.ConnectionString = "PWD=mju4mkyt;DSN=iso9002;UID=isooper;HOST=162.198.100.2162.198.100.2;PROTOCOL=onsoctcp;SERVICE=1529;DATABASE=iso9002;SERVER=pdc3"
         'cn2.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        cn2.ConnectionString = conexionActual
+        cn2.ConnectionString = conexionServidor
         cn2.Open()
         Return cn2
     End Function
@@ -38,7 +39,7 @@ Public Class Class1
         cn2.Close()
         'cn2.ConnectionString = "PWD=informix;DSN=infofix;UID=informix;HOST=162.198.100.5;PROTOCOL=onsoctcp;SERVICE=1533;DATABASE=dbfinan;SERVER=informatica"
         'cn2.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        cn2.ConnectionString = conexionActual
+        cn2.ConnectionString = conexionServidor
         cn2.Open()
         Return cn2
     End Function
@@ -48,7 +49,7 @@ Public Class Class1
         'cn2.ConnectionString = "Data Source=eslavadeveloper.database.windows.net,1433;Initial Catalog=PMD;User ID=eslavaDB;Password=Razus 1589"
         'cn2.ConnectionString = "Data Source=(local)\SQL2012;Initial Catalog=Planeacion_Financiera;Persist Security Info=True;Integrated Security=SSPI;"
         'cn2.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        cn2.ConnectionString = conexionActual
+        cn2.ConnectionString = conexionServidor
         cn2.Open()
         Return cn2
     End Function
@@ -56,7 +57,7 @@ Public Class Class1
         cn2.Close()
         'cn2.ConnectionString = "PWD=informix;DSN=infofix;UID=informix;HOST=162.198.100.5;PROTOCOL=onsoctcp;SERVICE=1533;DATABASE=dbfinan;SERVER=informatica"
         'cn2.ConnectionString = "Data Source=187.176.54.246;Initial Catalog=Planeacion_Financiera;User ID=usrPlaneacion;Password=usrPlaneacion"
-        cn2.ConnectionString = conexionActual
+        cn2.ConnectionString = conexionServidor
         cn2.Open()
         Return cn2
     End Function
